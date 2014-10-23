@@ -1,0 +1,15 @@
+[submodule "vendor/emacs-powerline"]
+	path = vendor/emacs-powerline
+	url = git://github.com/jonathanchu/emacs-powerline.git
+[submodule "vendor/tramp"]
+	path = vendor/tramp
+	url = git://git.savannah.gnu.org/tramp.git
+[submodule "tern"]
+	path = tern
+	url = https://github.com/marijnh/tern.git
+[submodule "slime"]
+	path = slime
+	url = https://github.com/slime/slime
+[submodule "emacs-color-themes"]
+	path = emacs-color-themes
+	url = https://github.com/owainlewis/emacs-color-themes.git
