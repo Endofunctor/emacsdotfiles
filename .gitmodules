@@ -16,3 +16,6 @@
 [submodule "vendor/multiple-cursors"]
 	path = vendor/multiple-cursors
 	url = https://github.com/magnars/multiple-cursors.el.git
+[submodule "vendor/undo-tree"]
+	path = vendor/undo-tree
+	url = http://www.dr-qubit.org/git/undo-tree.git

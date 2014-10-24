@@ -95,8 +95,19 @@
 (add-to-list 'default-frame-alist '(font . "Menlo for Powerline"))
 (set-face-attribute 'default t :font "Menlo for Powerline")
 
+
+;; Undo Tree Mode
+;; Tell emacs where is your personal elisp lib dir
+(add-to-list 'load-path "~/.emacs.d/vendor/undo-tree")
+(require 'undo-tree)
+(global-undo-tree-mode 1)
+
+;; Undo Tree Bindings
+(defalias 'redo 'undo-tree-redo)
+(global-set-key (kbd "C-z") 'undo) ; 【Ctrl+z】
+(global-set-key (kbd "C-S-z") 'redo) ; 【Ctrl+Shift+z】;  Mac style
+
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-;;(load-theme 'color-theme-phil-neon t)
 
 (load-file "~/.emacs.d/julia-mode.el")
 (require 'julia-mode)
@@ -147,6 +158,7 @@
 
 ;; Set the cursor style
 (set-default 'cursor-type 'bar)
+(setq-default cursor-type '(bar . 1))
 
 ;; Get rid of the aquamacs toolbar
 (tool-bar-mode 0)
@@ -160,6 +172,10 @@
 ;; Multiple cursors
 (add-to-list 'load-path "~/emacs/vendor/multiple-cursors.el")
 (require 'multiple-cursors)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 
 ;; Customize background color of lighlighted line
 ;;(set-face-background 'hl-line "#222222")
