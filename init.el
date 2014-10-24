@@ -1,6 +1,97 @@
 (let ((default-directory "~/.emacs.d/"))
   (normal-top-level-add-subdirs-to-load-path))
 
+;;(setq insert-directory-program "/opt/local/bin/gls")
+(setq dired-listing-switches "-aBhl --group-directories-first")
+;; OSX ls doesn't support --dired. use brew's gnu core utils
+(setq insert-directory-program "gls" dired-use-ls-dired t)
+
+(load-file "~/.emacs.d/vendor/cedet/lisp/cedet/cedet.el")
+(global-ede-mode 1)
+
+;; EDE Project
+(ede-cpp-root-project "PyMOL"
+                :name "PyMol Project"
+                :file "~/Development/pymol/Makefile"
+                :include-path '("/"
+                                "/layer0"
+                                "/layer1"
+                                "/layer2"
+				"/layer3"
+				"/layer4"
+				"/layer5"
+				"/contrib/PicklingTools/include"
+                               )
+                :system-include-path '("/usr/local/include")
+                :spp-table '(("SYM_TO_MAT_LIST_IN_C" . "")
+			     ("PICKLETOOLS" . "")
+			     ("_PYMOL_OSX" . "")
+			     ("_PYMOL_NO_MAIN" . "")
+			     ("_PYMOL_NOPY" . "")
+			     ("_PYMOL_LIB" . "")
+			     ("_PYMOL_MODULE" . "")
+			     ("_PYMOL_INLINE" . "")
+			     ("DARWIN_NO_CARBON" . "")
+			     ("NO_MMLIBS" . "")
+			     ("CMOL_HAS_OPENGL_PYMOL" . "")
+			     ("_PYMOL_FREETYPE" . "")
+			     ("_PYMOL_IOS" . "")
+			     ("FT_OPTIMIZE_MEMORY" . "")
+			     ("DFT2_BUILD_LIBRARY" . "")
+			     ("_PYMOL_CGO_DRAWBUFFERS" . "")
+			     ("TT_CONFIG_OPTION_BYTECODE_INTERPRETER" . "")
+			     ("PYMOL_TEXT_IN_ONE_TEXTURE" . "")
+			     ("PYMOL_IOS_NO_4_PASS" . "")
+			     ("RENDER_ORTHO_WITH_CGO" . "")
+			     ("PURE_OPENGL_ES_2" . "")
+			     ("OPENGL_ES_2 -D_WEBGL" . "")
+			     ("CMOL_HAS_OPENGL" . "")
+			     ("CMOL_HAS_PYMOL" . "")
+			     ("GL_GLEXT_PROTOTYPES" . "")
+			     ("_WEBGL_INCLUDE_DEFAULT_FONT" . "")
+			     ("OC_NEW_STYLE_INCLUDES" . "")
+			     ("OC_FACTOR_INTO_H_AND_CC" . "")
+			     ("_PICKLETOOLS_SAVE" . "")))
+
+
+;; Semantic Features
+(require 'semantic/ia)
+(require 'semantic/analyze)
+(provide 'semantic-analyze)
+(provide 'semantic-ctxt)
+(provide 'semanticdb)
+(provide 'semanticdb-find)
+(provide 'semanticdb-mode)
+(provide 'semantic-load)
+
+;; Load Emacs Code Browser
+(add-to-list 'load-path "~/.emacs.d/vendor/ecb")
+(require 'ecb)
+
+;; System Headers
+(semantic-add-system-include "/usr/include" 'c++-mode)
+(semantic-add-system-include "/usr/local/include" 'c++-mode)
+(semantic-add-system-include "/opt/local/include" 'c++-mode)
+
+;; IMenu Hook
+(defun my-semantic-hook ()
+  (imenu-add-to-menubar "TAGS"))
+(add-hook 'semantic-init-hooks 'my-semantic-hook)
+
+
+;; ;; use left command as meta, keep right command for mac binds
+;; ;; set M-h to hide to keep osx behavior
+;; (when system-type 'darwin
+;;   (setf mac-right-command-modifier 'meta)
+;;   (setq ns-command-modifier 'meta)
+;;   (setq ns-right-command-modifier 'super)
+;;   (global-set-key (kbd "M-h") 'ns-do-hide-emacs)
+;;   (global-set-key (kbd "M-`") 'ns-next-frame)
+;;   (global-set-key (kbd "M-c") 'ns-copy-including-secondary)
+;;   (global-set-key (kbd "M-v") 'ns-paste-secondary)
+;;   (global-set-key (kbd "M-RET") 'toggle-frame-fullscreen))
+
+(global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
 (add-to-list 'default-frame-alist '(font . "Menlo for Powerline"))
 (set-face-attribute 'default t :font "Menlo for Powerline")
 
@@ -23,6 +114,11 @@
 (load-file "~/.emacs.d/themes/color-theme-purpdrank-neon.el")
 (require 'color-theme)
 (color-theme-purpdrank-neon)
+
+;;(load-file "~/.emacs.d/vendor/cedet-1.1/common/cedet.el")
+;;(global-ede-mode 1)
+;;(semantic-load-enable-code-helpers)
+;;(global-srecode-minor-mode 1)
 
 ;; Following 4 commands are an attempt to fix the damn installer
 ;; (setq powerline-color1 "#073642")
