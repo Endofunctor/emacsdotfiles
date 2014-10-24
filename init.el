@@ -115,6 +115,8 @@
 (require 'color-theme)
 (color-theme-purpdrank-neon)
 
+(load-file "~/.emacs.d/modes/glsl-mode.el")
+
 ;;(load-file "~/.emacs.d/vendor/cedet-1.1/common/cedet.el")
 ;;(global-ede-mode 1)
 ;;(semantic-load-enable-code-helpers)
@@ -154,6 +156,10 @@
 
 ;; Highlight current line
 (global-hl-line-mode 1)
+
+;; Multiple cursors
+(add-to-list 'load-path "~/emacs/vendor/multiple-cursors.el")
+(require 'multiple-cursors)
 
 ;; Customize background color of lighlighted line
 ;;(set-face-background 'hl-line "#222222")

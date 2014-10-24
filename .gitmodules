@@ -13,3 +13,6 @@
 [submodule "emacs-color-themes"]
 	path = emacs-color-themes
 	url = https://github.com/owainlewis/emacs-color-themes.git
+[submodule "vendor/multiple-cursors"]
+	path = vendor/multiple-cursors
+	url = https://github.com/magnars/multiple-cursors.el.git
