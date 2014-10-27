@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	c-electric-paren
 	comment-or-uncomment-region
 	keyboard-escape-quit
 	))
