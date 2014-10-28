@@ -4,9 +4,6 @@
 [submodule "vendor/tramp"]
 	path = vendor/tramp
 	url = git://git.savannah.gnu.org/tramp.git
-[submodule "tern"]
-	path = tern
-	url = https://github.com/marijnh/tern.git
 [submodule "slime"]
 	path = slime
 	url = https://github.com/slime/slime
@@ -28,3 +25,6 @@
 [submodule "vendor/auto-complete"]
 	path = vendor/auto-complete
 	url = https://github.com/auto-complete/auto-complete.git
+[submodule "vendor/tern"]
+	path = vendor/tern
+	url = https://github.com/marijnh/tern.git

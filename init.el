@@ -328,3 +328,12 @@
 (add-hook 'c-mode-common-hook 'c-mode-cedet-ac-hook)
 (add-hook 'c++-mode-common-hook 'c-mode-cedet-ac-hook)
 
+;; TernJS
+(add-to-list 'load-path "~/.emacs.d/vendor/tern/emacs")
+(autoload 'tern-mode "tern.el" nil t)
+(eval-after-load 'tern
+   '(progn
+      (require 'tern-auto-complete)
+      (tern-ac-setup)))
+(add-hook 'js-mode-hook (lambda () (tern-mode t)))
+(add-hook 'javascript-mode-hook (lambda () (tern-mode t)))
