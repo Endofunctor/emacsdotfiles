@@ -1,0 +1,14 @@
+;; Object oculus_pymol/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "oculus_pymol/"
+  :tables
+  (list
+    (semanticdb-table "test.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "test.cpp"
+      :pointmax 1
+      :unmatched-syntax nil))
+  :file "!Users!marques!Development!oculus_pymol!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

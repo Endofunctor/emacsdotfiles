@@ -239,53 +239,53 @@
             ("CONNECTOR_FS_FILENAME" variable (:constant-flag t) nil [5506 5527])
             ("DEFAULTSCREEN_VS_FILENAME" variable (:constant-flag t) nil [5552 5577])
             ("DEFAULTSCREEN_FS_FILENAME" variable (:constant-flag t) nil [5605 5630])
-            ("CYLINDER_VS_FILENAME" variable (:constant-flag t) nil [5684 5704])
-            ("CYLINDER_FS_FILENAME" variable (:constant-flag t) nil [5731 5751])
-            ("SPHERE_VS_FILENAME" variable (:constant-flag t) nil [5778 5796])
-            ("SPHERE_FS_FILENAME" variable (:constant-flag t) nil [5821 5839])
-            ("MASK_SHADERS_PRESENT_GEOMETRY" variable (:constant-flag t) nil [6042 6071])
-            ("MASK_SHADERS_PRESENT_SMAA" variable (:constant-flag t) nil [6085 6110])
+            ("CYLINDER_VS_FILENAME" variable (:constant-flag t) nil [5710 5730])
+            ("CYLINDER_FS_FILENAME" variable (:constant-flag t) nil [5757 5777])
+            ("SPHERE_VS_FILENAME" variable (:constant-flag t) nil [5804 5822])
+            ("SPHERE_FS_FILENAME" variable (:constant-flag t) nil [5847 5865])
+            ("MASK_SHADERS_PRESENT_GEOMETRY" variable (:constant-flag t) nil [6270 6299])
+            ("MASK_SHADERS_PRESENT_SMAA" variable (:constant-flag t) nil [6313 6338])
             ("mat3identity" variable
                (:dereference 1
                 :typemodifiers ("static")
                 :constant-flag t
                 :default-value "{ 1., 0., 0., 0., 1., 0., 0., 0., 1. }"
                 :type "float")
-                nil [6117 6192])
+                nil [6345 6420])
             ("getGLVersion" function
                (:prototype-flag t
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [6212 6229])
+                        (reparse-symbol arg-sub-list) [6440 6457])
                     ("major" variable
                        (:pointer 1
                         :type "int")
-                        (reparse-symbol arg-sub-list) [6230 6241])
+                        (reparse-symbol arg-sub-list) [6458 6469])
                     ("minor" variable
                        (:pointer 1
                         :type "int")
-                        (reparse-symbol arg-sub-list) [6242 6253]))                  
+                        (reparse-symbol arg-sub-list) [6470 6481]))                  
                 :type "void")
-                nil [6194 6254])
+                nil [6422 6482])
             ("getGLSLVersion" function
                (:prototype-flag t
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [6275 6292])
+                        (reparse-symbol arg-sub-list) [6503 6520])
                     ("major" variable
                        (:pointer 1
                         :type "int")
-                        (reparse-symbol arg-sub-list) [6293 6304])
+                        (reparse-symbol arg-sub-list) [6521 6532])
                     ("minor" variable
                        (:pointer 1
                         :type "int")
-                        (reparse-symbol arg-sub-list) [6305 6316]))                  
+                        (reparse-symbol arg-sub-list) [6533 6544]))                  
                 :type "void")
-                nil [6255 6317])
+                nil [6483 6545])
             ("disableShaders" function
                (:prototype-flag t
                 :typemodifiers ("static")
@@ -293,128 +293,128 @@
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [6346 6363]))                  
+                        (reparse-symbol arg-sub-list) [6574 6591]))                  
                 :type "void")
-                nil [6319 6364])
+                nil [6547 6592])
             ("CShaderPrg_SetFogUniforms" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [6398 6415])
+                        (reparse-symbol arg-sub-list) [6626 6643])
                     ("shaderPrg" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [6416 6439]))                  
+                        (reparse-symbol arg-sub-list) [6644 6667]))                  
                 :type "void")
-                nil [6367 8584])
+                nil [6595 8809])
             ("disableShaders" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [9186 9203]))                  
+                        (reparse-symbol arg-sub-list) [9411 9428]))                  
                 :type "void")
-                nil [9166 9357])
+                nil [9391 9582])
             ("disableGeometryShaders" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [9387 9404]))                  
+                        (reparse-symbol arg-sub-list) [9612 9629]))                  
                 :type "void")
-                nil [9359 9688])
+                nil [9584 9913])
             ("CShaderMgr_Free_Shader_Arrays" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [9725 9739]))                  
+                        (reparse-symbol arg-sub-list) [9950 9964]))                  
                 :type "void")
-                nil [9690 9860])
-            ("MIN_CHAR" variable (:constant-flag t) nil [9870 9878])
+                nil [9915 10085])
+            ("MIN_CHAR" variable (:constant-flag t) nil [10095 10103])
             ("CShaderPrg_ReadFromFile_Or_Use_String" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [9968 9985])
+                        (reparse-symbol arg-sub-list) [10193 10210])
                     ("name" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [9986 10005])
+                        (reparse-symbol arg-sub-list) [10211 10230])
                     ("fileName" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [10006 10029])
+                        (reparse-symbol arg-sub-list) [10231 10254])
                     ("fallback_str" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [10030 10057]))                  
+                        (reparse-symbol arg-sub-list) [10255 10282]))                  
                 :type ("string" type (:type "class") nil nil))
-                nil [9923 10163])
+                nil [10148 10388])
             ("CShaderPrg_ReplaceStrings" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [10196 10212])
+                        (reparse-symbol arg-sub-list) [10421 10437])
                     ("dest_line" variable
                        (:reference 1
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [10213 10231])
+                        (reparse-symbol arg-sub-list) [10438 10456])
                     ("replaceStrings" variable
                        (:dereference 1
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [10232 10256]))                  
+                        (reparse-symbol arg-sub-list) [10457 10481]))                  
                 :type "void")
-                nil [10165 10548])
+                nil [10390 10773])
             ("CShaderPrg_ReplaceStringsInPlace" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [10588 10604])
+                        (reparse-symbol arg-sub-list) [10813 10829])
                     ("dest_line" variable
                        (:pointer 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [10605 10621])
+                        (reparse-symbol arg-sub-list) [10830 10846])
                     ("replaceStrings" variable
                        (:pointer 2
                         :type "char")
-                        (reparse-symbol arg-sub-list) [10622 10644]))                  
+                        (reparse-symbol arg-sub-list) [10847 10869]))                  
                 :type "void")
-                nil [10550 11047])
+                nil [10775 11272])
             ("CShaderPrg_Reload_CallComputeColorForLightImpl" function
                (:prototype-flag t
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11101 11118])
+                        (reparse-symbol arg-sub-list) [11326 11343])
                     ("name" variable
                        (:reference 1
                         :constant-flag t
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11119 11143]))                  
+                        (reparse-symbol arg-sub-list) [11344 11368]))                  
                 :type "void")
-                nil [11049 11144])
+                nil [11274 11369])
             ("CShaderPrg_Reload_CallComputeColorForLight" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11194 11211])
+                        (reparse-symbol arg-sub-list) [11419 11436])
                     ("name" variable
                        (:reference 1
                         :constant-flag t
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11212 11236]))                  
+                        (reparse-symbol arg-sub-list) [11437 11461]))                  
                 :type "void")
-                nil [11146 11387])
+                nil [11371 11523])
             ("light0strings" variable
                (:dereference 1
                 :default-value "{
@@ -422,358 +422,358 @@
   \"`postfix`\", \"_0\", \"\"
 }"
                 :type ("string" type (:type "class") nil nil))
-                nil [11389 11461])
+                nil [11525 11597])
             ("CShaderPrg_Reload_CallComputeColorForLightImpl" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11515 11532])
+                        (reparse-symbol arg-sub-list) [11651 11668])
                     ("name" variable
                        (:reference 1
                         :constant-flag t
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [11533 11557]))                  
+                        (reparse-symbol arg-sub-list) [11669 11693]))                  
                 :type "void")
-                nil [11463 12612])
+                nil [11599 13146])
             ("CShaderPrg_Reload_All_Shaders_For_CallComputeColorForLight" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [12677 12694]))                  
+                        (reparse-symbol arg-sub-list) [13211 13228]))                  
                 :type "void")
-                nil [12613 12896])
+                nil [13147 13430])
             ("CShaderPrg_Invalidate_ShaderImpl" function
                (:prototype-flag t
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [12936 12953])
+                        (reparse-symbol arg-sub-list) [13470 13487])
                     ("I" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [12954 12969]))                  
+                        (reparse-symbol arg-sub-list) [13488 13503]))                  
                 :type "void")
-                nil [12898 12970])
+                nil [13432 13504])
             ("CShaderPrg_Invalidate_Shader" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [13006 13023])
+                        (reparse-symbol arg-sub-list) [13540 13557])
                     ("name" variable
                        (:pointer 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [13024 13035]))                  
+                        (reparse-symbol arg-sub-list) [13558 13569]))                  
                 :type "void")
-                nil [12972 13150])
+                nil [13506 13684])
             ("CShaderPrg_Invalidate_ShaderImpl" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [13190 13207])
+                        (reparse-symbol arg-sub-list) [13724 13741])
                     ("I" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [13208 13223]))                  
+                        (reparse-symbol arg-sub-list) [13742 13757]))                  
                 :type "void")
-                nil [13152 13591])
+                nil [13686 14125])
             ("CShaderPrg_Invalidate_All_Shaders" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [13632 13649]))                  
+                        (reparse-symbol arg-sub-list) [14166 14183]))                  
                 :type "void")
-                nil [13593 13835])
+                nil [14127 14369])
             ("CShaderPrg_Reload_All_Shaders" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [13872 13889]))                  
+                        (reparse-symbol arg-sub-list) [14406 14423]))                  
                 :type "void")
-                nil [13837 14331])
-            ("IFDEF" variable (:constant-flag t) nil [14341 14346])
-            ("IFNDEF" variable (:constant-flag t) nil [14383 14389])
-            ("ELSE" variable (:constant-flag t) nil [14415 14419])
-            ("ENDIF" variable (:constant-flag t) nil [14445 14450])
-            ("INCLUDE" variable (:constant-flag t) nil [14476 14483])
-            ("LOOKUP" variable (:constant-flag t) nil [14509 14515])
+                nil [14371 14865])
+            ("IFDEF" variable (:constant-flag t) nil [14875 14880])
+            ("IFNDEF" variable (:constant-flag t) nil [14917 14923])
+            ("ELSE" variable (:constant-flag t) nil [14949 14953])
+            ("ENDIF" variable (:constant-flag t) nil [14979 14984])
+            ("INCLUDE" variable (:constant-flag t) nil [15010 15017])
+            ("LOOKUP" variable (:constant-flag t) nil [15043 15049])
             ("preprocmap" variable (:type ("map" type
                  (:template-specifier 
                     ( ("string" type nil nil nil)
                       ("short" type nil nil nil))                    
                   :type "class")
-                  nil nil)) nil [14556 14586])
+                  nil nil)) nil [15090 15120])
             ("CShaderPrg_ReadFromFile_Or_Use_String_Replace_Strings" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [14649 14666])
+                        (reparse-symbol arg-sub-list) [15183 15200])
                     ("name" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [14667 14686])
+                        (reparse-symbol arg-sub-list) [15201 15220])
                     ("fileName" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [14687 14710])
+                        (reparse-symbol arg-sub-list) [15221 15244])
                     ("fallback_str" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [14711 14738])
+                        (reparse-symbol arg-sub-list) [15245 15272])
                     ("replaceStrings" variable
                        (:dereference 1
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [14739 14763]))                  
+                        (reparse-symbol arg-sub-list) [15273 15297]))                  
                 :type ("string" type (:type "class") nil nil))
-                nil [14588 18628])
-            ("FREE_AND_REPLACE_WITH" variable (:constant-flag t) nil [18638 18659])
+                nil [15122 19162])
+            ("FREE_AND_REPLACE_WITH" variable (:constant-flag t) nil [19172 19193])
             ("CShaderMgr_Reload_Shader_Variables" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [18745 18762]))                  
+                        (reparse-symbol arg-sub-list) [19279 19296]))                  
                 :type "void")
-                nil [18705 21618])
+                nil [19239 22152])
             ("ShaderMgrInit" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [21826 21843]))                  
+                        (reparse-symbol arg-sub-list) [22360 22377]))                  
                 :type ("OVstatus" type (:type "class") nil nil))
-                nil [21803 22422])
+                nil [22337 22956])
             ("CShaderMgr_Reload_Sphere_Shader" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [22461 22477]))                  
+                        (reparse-symbol arg-sub-list) [22995 23011]))                  
                 :type "void")
-                nil [22424 22848])
+                nil [22958 23382])
             ("CShaderMgr_Reload_BG_Shader" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [22883 22899]))                  
+                        (reparse-symbol arg-sub-list) [23417 23433]))                  
                 :type "void")
-                nil [22850 23041])
+                nil [23384 23575])
             ("CShaderMgr_Reload_Indicator_Shader" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [23083 23099]))                  
+                        (reparse-symbol arg-sub-list) [23617 23633]))                  
                 :type "void")
-                nil [23043 23240])
+                nil [23577 23774])
             ("CShaderMgr_Reload_Shader" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [23272 23288])
+                        (reparse-symbol arg-sub-list) [23806 23822])
                     ("name" variable
                        (:reference 1
                         :constant-flag t
                         :type ("std::string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [23289 23313]))                  
+                        (reparse-symbol arg-sub-list) [23823 23847]))                  
                 :type "void")
-                nil [23242 23383])
+                nil [23776 23917])
             ("CShaderMgr_Reload_Volume_Shader" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [23422 23438]))                  
+                        (reparse-symbol arg-sub-list) [23956 23972]))                  
                 :type "void")
-                nil [23385 23544])
+                nil [23919 24078])
             ("CShaderMgr_Reload_TriLines_Shader" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [23585 23601]))                  
+                        (reparse-symbol arg-sub-list) [24119 24135]))                  
                 :type "void")
-                nil [23546 23708])
+                nil [24080 24242])
             ("CShaderMgr_Reload_Default_Shader" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [23748 23764]))                  
+                        (reparse-symbol arg-sub-list) [24282 24298]))                  
                 :type "void")
-                nil [23710 24213])
+                nil [24244 24747])
             ("CShaderMgr_Reload_Connector_Shader" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [24255 24271]))                  
+                        (reparse-symbol arg-sub-list) [24789 24805]))                  
                 :type "void")
-                nil [24215 24675])
+                nil [24749 25209])
             ("CShaderMgr_Reload_Cylinder_Shader" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [24715 24731]))                  
+                        (reparse-symbol arg-sub-list) [25249 25265]))                  
                 :type "void")
-                nil [24676 24992])
+                nil [25210 25550])
             ("CShaderMgr_Reload_Label_Shader" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [25030 25046]))                  
+                        (reparse-symbol arg-sub-list) [25588 25604]))                  
                 :type "void")
-                nil [24994 25443])
+                nil [25552 26001])
             ("CShaderPrg_Update_Shaders_For_Background" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [25491 25508]))                  
+                        (reparse-symbol arg-sub-list) [26049 26066]))                  
                 :type "void")
-                nil [25445 25934])
+                nil [26003 26492])
             ("CShaderPrg_Reload" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [25958 25975])
+                        (reparse-symbol arg-sub-list) [26516 26533])
                     ("name" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [25976 25995])
+                        (reparse-symbol arg-sub-list) [26534 26553])
                     ("v" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [25996 26012])
+                        (reparse-symbol arg-sub-list) [26554 26570])
                     ("f" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [26013 26029]))                  
+                        (reparse-symbol arg-sub-list) [26571 26587]))                  
                 :type "int")
-                nil [25936 26116])
+                nil [26494 26674])
             ("CShaderPrg_ReloadImpl" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [26143 26160])
+                        (reparse-symbol arg-sub-list) [26701 26718])
                     ("name" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [26161 26180])
+                        (reparse-symbol arg-sub-list) [26719 26738])
                     ("geom" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [26181 26200])
+                        (reparse-symbol arg-sub-list) [26739 26758])
                     ("vert" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [26201 26220])
+                        (reparse-symbol arg-sub-list) [26759 26778])
                     ("frag" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [26221 26240])
-                    ("gsInput" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26241 26256])
-                    ("gsOutput" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26257 26273])
-                    ("ngsVertsOut" variable (:type "int") (reparse-symbol arg-sub-list) [26274 26290]))                  
+                        (reparse-symbol arg-sub-list) [26779 26798])
+                    ("gsInput" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26799 26814])
+                    ("gsOutput" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26815 26831])
+                    ("ngsVertsOut" variable (:type "int") (reparse-symbol arg-sub-list) [26832 26848]))                  
                 :type "int")
-                nil [26117 31102])
+                nil [26675 31765])
             ("ShaderMgrConfig" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [31405 31422]))                  
+                        (reparse-symbol arg-sub-list) [32068 32085]))                  
                 :type "void")
-                nil [31384 39216])
+                nil [32047 39932])
             ("getGLVersion" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [39415 39432])
+                        (reparse-symbol arg-sub-list) [40131 40148])
                     ("major" variable
                        (:pointer 1
                         :type "int")
-                        (reparse-symbol arg-sub-list) [39433 39444])
+                        (reparse-symbol arg-sub-list) [40149 40160])
                     ("minor" variable
                        (:pointer 1
                         :type "int")
-                        (reparse-symbol arg-sub-list) [39445 39456]))                  
+                        (reparse-symbol arg-sub-list) [40161 40172]))                  
                 :type "void")
-                nil [39397 39839])
+                nil [40113 40555])
             ("CShaderMgr_New" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [40980 40997]))                  
+                        (reparse-symbol arg-sub-list) [41696 41713]))                  
                 :type ("CShaderMgr" type (:type "class") nil nil))
-                nil [40952 41793])
+                nil [41668 42509])
             ("CShaderMgrFree" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [41815 41831]))                  
+                        (reparse-symbol arg-sub-list) [42531 42547]))                  
                 :type "void")
-                nil [41795 41869])
+                nil [42511 42585])
             ("CShaderMgr_Delete" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [41894 41909]))                  
+                        (reparse-symbol arg-sub-list) [42610 42625]))                  
                 :type "void")
-                nil [41871 42287])
+                nil [42587 43003])
             ("CShaderMgr_AddShaderPrg" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [42317 42332])
+                        (reparse-symbol arg-sub-list) [43033 43048])
                     ("s" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [42333 42348]))                  
+                        (reparse-symbol arg-sub-list) [43049 43064]))                  
                 :type "int")
-                nil [42289 42535])
+                nil [43005 43251])
             ("CShaderMgr_RemoveShaderPrg" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [42568 42583])
+                        (reparse-symbol arg-sub-list) [43284 43299])
                     ("name" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [42584 42603]))                  
+                        (reparse-symbol arg-sub-list) [43300 43319]))                  
                 :type "int")
-                nil [42537 42704])
+                nil [43253 43420])
             ("CShaderMgr_GetShaderPrgImpl" function
                (:prototype-flag t
                 :pointer 1
@@ -781,533 +781,533 @@
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [42747 42762])
+                        (reparse-symbol arg-sub-list) [43463 43478])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [42763 42781])
-                    ("set_current_shader" variable (:type "short") (reparse-symbol arg-sub-list) [42782 42807]))                  
+                        (reparse-symbol arg-sub-list) [43479 43497])
+                    ("set_current_shader" variable (:type "short") (reparse-symbol arg-sub-list) [43498 43523]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [42706 42808])
+                nil [43422 43524])
             ("CShaderMgr_GetShaderPrg_NoSet" function
                (:pointer 1
                 :arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [42853 42868])
+                        (reparse-symbol arg-sub-list) [43569 43584])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [42869 42887]))                  
+                        (reparse-symbol arg-sub-list) [43585 43603]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [42810 42940])
+                nil [43526 43656])
             ("CShaderMgr_GetShaderPrg" function
                (:pointer 1
                 :arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [42979 42994])
+                        (reparse-symbol arg-sub-list) [43695 43710])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [42995 43013]))                  
+                        (reparse-symbol arg-sub-list) [43711 43729]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [42942 43066])
+                nil [43658 43782])
             ("CShaderMgr_GetShaderPrgImpl" function
                (:pointer 1
                 :arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [43109 43124])
+                        (reparse-symbol arg-sub-list) [43825 43840])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [43125 43143])
-                    ("set_current_shader" variable (:type "short") (reparse-symbol arg-sub-list) [43144 43169]))                  
+                        (reparse-symbol arg-sub-list) [43841 43859])
+                    ("set_current_shader" variable (:type "short") (reparse-symbol arg-sub-list) [43860 43885]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [43068 43355])
+                nil [43784 44071])
             ("CShaderMgr_ShaderPrgExists" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [43388 43403])
+                        (reparse-symbol arg-sub-list) [44104 44119])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [43404 43422]))                  
+                        (reparse-symbol arg-sub-list) [44120 44138]))                  
                 :type "int")
-                nil [43357 43479])
+                nil [44073 44195])
             ("CShaderMgr_ShadersPresent" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [43511 43526]))                  
+                        (reparse-symbol arg-sub-list) [44227 44242]))                  
                 :type "int")
-                nil [43481 43558])
+                nil [44197 44274])
             ("CShaderMgr_GeometryShadersPresent" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [43598 43613]))                  
+                        (reparse-symbol arg-sub-list) [44314 44329]))                  
                 :type "int")
-                nil [43560 43677])
+                nil [44276 44393])
             ("CShaderMgr_SMAAShadersPresent" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [43713 43728]))                  
+                        (reparse-symbol arg-sub-list) [44429 44444]))                  
                 :type "int")
-                nil [43679 43788])
+                nil [44395 44504])
             ("CShaderPrg_NewARB" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [46111 46128])
+                        (reparse-symbol arg-sub-list) [46827 46844])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [46129 46147])
+                        (reparse-symbol arg-sub-list) [46845 46863])
                     ("vert" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [46148 46167])
+                        (reparse-symbol arg-sub-list) [46864 46883])
                     ("frag" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [46168 46187]))                  
+                        (reparse-symbol arg-sub-list) [46884 46903]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [46080 48279])
+                nil [46796 48995])
             ("CShaderPrg_Generate_SphereDepthMapTexture" function
                (:prototype-flag t
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [48328 48345]))                  
+                        (reparse-symbol arg-sub-list) [49044 49061]))                  
                 :type "void")
-                nil [48281 48346])
+                nil [48997 49062])
             ("CShaderPrg_Delete" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [48371 48386]))                  
+                        (reparse-symbol arg-sub-list) [49087 49102]))                  
                 :type "void")
-                nil [48348 48557])
+                nil [49064 49273])
             ("CShaderPrg_Enable" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [48582 48597]))                  
+                        (reparse-symbol arg-sub-list) [49298 49313]))                  
                 :type "int")
-                nil [48560 49476])
+                nil [49276 50192])
             ("CShaderPrg_Disable" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [49501 49516]))                  
+                        (reparse-symbol arg-sub-list) [50217 50232]))                  
                 :type "int")
-                nil [49478 49668])
+                nil [50194 50384])
             ("CShaderPrg_DisableARB" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [49696 49711]))                  
+                        (reparse-symbol arg-sub-list) [50412 50427]))                  
                 :type "int")
-                nil [49670 49883])
+                nil [50386 50599])
             ("CShaderPrg_IsLinked" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [49910 49926]))                  
+                        (reparse-symbol arg-sub-list) [50626 50642]))                  
                 :type "int")
-                nil [49886 50025])
+                nil [50602 50741])
             ("CShaderPrg_Link" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [50047 50062]))                  
+                        (reparse-symbol arg-sub-list) [50763 50778]))                  
                 :type "int")
-                nil [50027 50909])
+                nil [50743 51625])
             ("CShaderPrg_Set1i" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [50973 50988])
+                        (reparse-symbol arg-sub-list) [51689 51704])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [50989 51007])
-                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [51008 51014]))                  
+                        (reparse-symbol arg-sub-list) [51705 51723])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [51724 51730]))                  
                 :type "int")
-                nil [50952 51163])
+                nil [51668 51879])
             ("CShaderPrg_Set3f" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [51186 51201])
+                        (reparse-symbol arg-sub-list) [51902 51917])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [51202 51220])
-                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [51221 51230])
-                    ("f2" variable (:type "float") (reparse-symbol arg-sub-list) [51231 51240])
-                    ("f3" variable (:type "float") (reparse-symbol arg-sub-list) [51241 51250]))                  
+                        (reparse-symbol arg-sub-list) [51918 51936])
+                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [51937 51946])
+                    ("f2" variable (:type "float") (reparse-symbol arg-sub-list) [51947 51956])
+                    ("f3" variable (:type "float") (reparse-symbol arg-sub-list) [51957 51966]))                  
                 :type "int")
-                nil [51165 51408])
+                nil [51881 52124])
             ("CShaderPrg_Set2f" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [51431 51446])
+                        (reparse-symbol arg-sub-list) [52147 52162])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [51447 51465])
-                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [51466 51475])
-                    ("f2" variable (:type "float") (reparse-symbol arg-sub-list) [51476 51485]))                  
+                        (reparse-symbol arg-sub-list) [52163 52181])
+                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [52182 52191])
+                    ("f2" variable (:type "float") (reparse-symbol arg-sub-list) [52192 52201]))                  
                 :type "int")
-                nil [51410 51639])
+                nil [52126 52355])
             ("CShaderPrg_SetMat3f_Impl" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [51670 51685])
+                        (reparse-symbol arg-sub-list) [52386 52401])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [51686 51704])
+                        (reparse-symbol arg-sub-list) [52402 52420])
                     ("m" variable
                        (:pointer 1
                         :constant-flag t
                         :type ("GLfloat" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [51705 51722])
-                    ("transpose" variable (:type ("GLboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51723 51743]))                  
+                        (reparse-symbol arg-sub-list) [52421 52438])
+                    ("transpose" variable (:type ("GLboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52439 52459]))                  
                 :type "int")
-                nil [51641 51915])
+                nil [52357 52631])
             ("CShaderPrg_SetMat4f_Impl" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [51946 51961])
+                        (reparse-symbol arg-sub-list) [52662 52677])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [51962 51980])
+                        (reparse-symbol arg-sub-list) [52678 52696])
                     ("m" variable
                        (:pointer 1
                         :type ("GLfloat" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [51981 51992])
-                    ("transpose" variable (:type ("GLboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51993 52013]))                  
+                        (reparse-symbol arg-sub-list) [52697 52708])
+                    ("transpose" variable (:type ("GLboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52709 52729]))                  
                 :type "int")
-                nil [51917 52183])
+                nil [52633 52899])
             ("CShaderPrg_SetMat3f" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [52209 52224])
+                        (reparse-symbol arg-sub-list) [52925 52940])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [52225 52243])
+                        (reparse-symbol arg-sub-list) [52941 52959])
                     ("m" variable
                        (:pointer 1
                         :constant-flag t
                         :type ("GLfloat" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [52244 52262]))                  
+                        (reparse-symbol arg-sub-list) [52960 52978]))                  
                 :type "int")
-                nil [52185 52323])
+                nil [52901 53039])
             ("CShaderPrg_SetMat4f" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [52349 52364])
+                        (reparse-symbol arg-sub-list) [53065 53080])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [52365 52383])
+                        (reparse-symbol arg-sub-list) [53081 53099])
                     ("m" variable
                        (:pointer 1
                         :type ("GLfloat" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [52384 52396]))                  
+                        (reparse-symbol arg-sub-list) [53100 53112]))                  
                 :type "int")
-                nil [52325 52457])
+                nil [53041 53173])
             ("CShaderPrg_SetMat3fc" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [52714 52729])
+                        (reparse-symbol arg-sub-list) [53430 53445])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [52730 52748])
+                        (reparse-symbol arg-sub-list) [53446 53464])
                     ("m" variable
                        (:pointer 1
                         :type ("GLfloat" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [52749 52761]))                  
+                        (reparse-symbol arg-sub-list) [53465 53477]))                  
                 :type "int")
-                nil [52689 52823])
+                nil [53405 53539])
             ("CShaderPrg_SetMat4fc" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [52850 52865])
+                        (reparse-symbol arg-sub-list) [53566 53581])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [52866 52884])
+                        (reparse-symbol arg-sub-list) [53582 53600])
                     ("m" variable
                        (:pointer 1
                         :type ("GLfloat" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [52885 52897]))                  
+                        (reparse-symbol arg-sub-list) [53601 53613]))                  
                 :type "int")
-                nil [52825 52959])
+                nil [53541 53675])
             ("CShaderPrg_Set4fv" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [52983 52998])
+                        (reparse-symbol arg-sub-list) [53699 53714])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [52999 53017])
+                        (reparse-symbol arg-sub-list) [53715 53733])
                     ("f" variable
                        (:pointer 1
                         :type "float")
-                        (reparse-symbol arg-sub-list) [53018 53027]))                  
+                        (reparse-symbol arg-sub-list) [53734 53743]))                  
                 :type "int")
-                nil [52961 53092])
+                nil [53677 53808])
             ("CShaderPrg_Set3fv" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [53115 53130])
+                        (reparse-symbol arg-sub-list) [53831 53846])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [53131 53149])
+                        (reparse-symbol arg-sub-list) [53847 53865])
                     ("f" variable
                        (:pointer 1
                         :type "float")
-                        (reparse-symbol arg-sub-list) [53150 53159]))                  
+                        (reparse-symbol arg-sub-list) [53866 53875]))                  
                 :type "int")
-                nil [53093 53218])
+                nil [53809 53934])
             ("CShaderPrg_Set4f" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [53241 53256])
+                        (reparse-symbol arg-sub-list) [53957 53972])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [53257 53275])
-                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [53276 53285])
-                    ("f2" variable (:type "float") (reparse-symbol arg-sub-list) [53286 53295])
-                    ("f3" variable (:type "float") (reparse-symbol arg-sub-list) [53296 53305])
-                    ("f4" variable (:type "float") (reparse-symbol arg-sub-list) [53306 53315]))                  
+                        (reparse-symbol arg-sub-list) [53973 53991])
+                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [53992 54001])
+                    ("f2" variable (:type "float") (reparse-symbol arg-sub-list) [54002 54011])
+                    ("f3" variable (:type "float") (reparse-symbol arg-sub-list) [54012 54021])
+                    ("f4" variable (:type "float") (reparse-symbol arg-sub-list) [54022 54031]))                  
                 :type "int")
-                nil [53220 53477])
+                nil [53936 54193])
             ("CShaderPrg_Set1f" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [53500 53515])
+                        (reparse-symbol arg-sub-list) [54216 54231])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [53516 53534])
-                    ("f" variable (:type "float") (reparse-symbol arg-sub-list) [53535 53543]))                  
+                        (reparse-symbol arg-sub-list) [54232 54250])
+                    ("f" variable (:type "float") (reparse-symbol arg-sub-list) [54251 54259]))                  
                 :type "int")
-                nil [53479 53692])
+                nil [54195 54408])
             ("CShaderPrg_GetAttribLocation" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [53727 53742])
+                        (reparse-symbol arg-sub-list) [54443 54458])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [53743 53761]))                  
+                        (reparse-symbol arg-sub-list) [54459 54477]))                  
                 :type "int")
-                nil [53694 53900])
+                nil [54410 54616])
             ("CShaderPrg_SetAttrib4fLocation" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [53938 53953])
+                        (reparse-symbol arg-sub-list) [54654 54669])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [53954 53972])
-                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [53973 53982])
-                    ("f2" variable (:type "float") (reparse-symbol arg-sub-list) [53983 53992])
-                    ("f3" variable (:type "float") (reparse-symbol arg-sub-list) [53993 54002])
-                    ("f4" variable (:type "float") (reparse-symbol arg-sub-list) [54003 54012]))                  
+                        (reparse-symbol arg-sub-list) [54670 54688])
+                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [54689 54698])
+                    ("f2" variable (:type "float") (reparse-symbol arg-sub-list) [54699 54708])
+                    ("f3" variable (:type "float") (reparse-symbol arg-sub-list) [54709 54718])
+                    ("f4" variable (:type "float") (reparse-symbol arg-sub-list) [54719 54728]))                  
                 :type "void")
-                nil [53902 54153])
+                nil [54618 54869])
             ("CShaderPrg_SetAttrib1fLocation" function
                (:arguments 
                   ( ("p" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [54191 54206])
+                        (reparse-symbol arg-sub-list) [54907 54922])
                     ("name" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [54207 54225])
-                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [54226 54235]))                  
+                        (reparse-symbol arg-sub-list) [54923 54941])
+                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [54942 54951]))                  
                 :type "void")
-                nil [54155 54364])
+                nil [54871 55080])
             ("CShaderMgr_FreeAllVBOs" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [54394 54409]))                  
+                        (reparse-symbol arg-sub-list) [55110 55125]))                  
                 :type "void")
-                nil [54366 54931])
-            ("STEP_FOR_BUF" variable (:constant-flag t) nil [54941 54953])
+                nil [55082 55647])
+            ("STEP_FOR_BUF" variable (:constant-flag t) nil [55657 55669])
             ("CShaderMgr_AddVBOsToFree" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [54989 55004])
+                        (reparse-symbol arg-sub-list) [55705 55720])
                     ("vboid" variable
                        (:pointer 1
                         :type ("GLuint" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [55005 55019])
-                    ("nvbos" variable (:type "int") (reparse-symbol arg-sub-list) [55020 55030]))                  
+                        (reparse-symbol arg-sub-list) [55721 55735])
+                    ("nvbos" variable (:type "int") (reparse-symbol arg-sub-list) [55736 55746]))                  
                 :type "void")
-                nil [54959 55139])
+                nil [55675 55855])
             ("CShaderMgr_AddVBOToFree" function
                (:arguments 
                   ( ("I" variable
                        (:pointer 1
                         :type ("CShaderMgr" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [55170 55185])
-                    ("vboid" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55186 55199]))                  
+                        (reparse-symbol arg-sub-list) [55886 55901])
+                    ("vboid" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55902 55915]))                  
                 :type "void")
-                nil [55141 55826])
+                nil [55857 56542])
             ("CShaderPrg_Set_Specular_Values" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [55864 55881])
+                        (reparse-symbol arg-sub-list) [56580 56597])
                     ("shaderPrg" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [55882 55905]))                  
+                        (reparse-symbol arg-sub-list) [56598 56621]))                  
                 :type "void")
-                nil [55828 57466])
+                nil [56544 58182])
             ("CShaderPrg_Set_AnaglyphMode" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [57501 57518])
+                        (reparse-symbol arg-sub-list) [58217 58234])
                     ("shaderPrg" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [57519 57542])
-                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [57543 57552]))                  
+                        (reparse-symbol arg-sub-list) [58235 58258])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [58259 58268]))                  
                 :type "void")
-                nil [57468 58112])
+                nil [58184 58828])
             ("CShaderPrg_Set_Stereo_And_AnaglyphMode" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [58158 58175])
+                        (reparse-symbol arg-sub-list) [58874 58891])
                     ("shaderPrg" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [58176 58199]))                  
+                        (reparse-symbol arg-sub-list) [58892 58915]))                  
                 :type "void")
-                nil [58114 58616])
+                nil [58830 59332])
             ("CShaderPrg_Set_GL" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [58641 58658]))                  
+                        (reparse-symbol arg-sub-list) [59357 59374]))                  
                 :type "void")
-                nil [58618 59500])
+                nil [59334 60216])
             ("CShaderPrg_Set_Matrices" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [59531 59548])
+                        (reparse-symbol arg-sub-list) [60247 60264])
                     ("shaderPrg" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [59549 59572]))                  
+                        (reparse-symbol arg-sub-list) [60265 60288]))                  
                 :type "void")
-                nil [59502 60542])
+                nil [60218 61258])
             ("CShaderPrg_SetLightingEnabled" function
                (:arguments 
                   ( ("shaderPrg" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [60578 60600])
-                    ("lighting_enabled" variable (:type "int") (reparse-symbol arg-sub-list) [60601 60622]))                  
+                        (reparse-symbol arg-sub-list) [61294 61316])
+                    ("lighting_enabled" variable (:type "int") (reparse-symbol arg-sub-list) [61317 61338]))                  
                 :type "int")
-                nil [60544 60884])
+                nil [61260 61600])
             ("CShaderPrg_Enable_DefaultShaderImpl" function
                (:prototype-flag t
                 :pointer 1
@@ -1315,235 +1315,235 @@
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [60934 60951])
+                        (reparse-symbol arg-sub-list) [61650 61667])
                     ("shaderPrg" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [60952 60975])
+                        (reparse-symbol arg-sub-list) [61668 61691])
                     ("set1" variable
                        (:pointer 1
                         :type ("CSetting" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [60976 60991])
+                        (reparse-symbol arg-sub-list) [61692 61707])
                     ("set2" variable
                        (:pointer 1
                         :type ("CSetting" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [60992 61007]))                  
+                        (reparse-symbol arg-sub-list) [61708 61723]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [60886 61008])
+                nil [61602 61724])
             ("CShaderPrg_Enable_DefaultScreenShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [61060 61077]))                  
+                        (reparse-symbol arg-sub-list) [61776 61793]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [61010 61218])
+                nil [61726 61934])
             ("CShaderPrg_Enable_DefaultShaderWithSettings" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [61276 61293])
+                        (reparse-symbol arg-sub-list) [61992 62009])
                     ("set1" variable
                        (:pointer 1
                         :type ("CSetting" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [61294 61309])
+                        (reparse-symbol arg-sub-list) [62010 62025])
                     ("set2" variable
                        (:pointer 1
                         :type ("CSetting" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [61310 61325]))                  
+                        (reparse-symbol arg-sub-list) [62026 62041]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [61220 61460])
+                nil [61936 62176])
             ("CShaderPrg_Enable_DefaultShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [61506 61523]))                  
+                        (reparse-symbol arg-sub-list) [62222 62239]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [61462 61658])
+                nil [62178 62374])
             ("CShaderPrg_Enable_ConnectorShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [61706 61723]))                  
+                        (reparse-symbol arg-sub-list) [62422 62439]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [61660 62971])
+                nil [62376 63687])
             ("CShaderPrg_Enable_DefaultShaderImpl" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [63021 63038])
+                        (reparse-symbol arg-sub-list) [63737 63754])
                     ("shaderPrg" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [63039 63062])
+                        (reparse-symbol arg-sub-list) [63755 63778])
                     ("set1" variable
                        (:pointer 1
                         :type ("CSetting" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [63063 63078])
+                        (reparse-symbol arg-sub-list) [63779 63794])
                     ("set2" variable
                        (:pointer 1
                         :type ("CSetting" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [63079 63094]))                  
+                        (reparse-symbol arg-sub-list) [63795 63810]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [62973 65982])
+                nil [63689 66698])
             ("CShaderPrg_Enable_CylinderShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [66028 66045]))                  
+                        (reparse-symbol arg-sub-list) [66744 66761]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [65983 69152])
+                nil [66699 69894])
             ("CShaderPrg_Enable_DefaultSphereShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [69204 69221]))                  
+                        (reparse-symbol arg-sub-list) [69946 69963]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [69154 69631])
+                nil [69896 70373])
             ("CShaderPrg_Get_DefaultSphereShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [69680 69697]))                  
+                        (reparse-symbol arg-sub-list) [70422 70439]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [69633 70123])
+                nil [70375 70865])
             ("CShaderPrg_Enable_SphereShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [70169 70186])
+                        (reparse-symbol arg-sub-list) [70911 70928])
                     ("name" variable
                        (:pointer 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [70187 70198]))                  
+                        (reparse-symbol arg-sub-list) [70929 70940]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [70126 72471])
+                nil [70868 73213])
             ("CShaderPrg_Enable_SphereShaderARB" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [72519 72536]))                  
+                        (reparse-symbol arg-sub-list) [73261 73278]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [72473 73213])
+                nil [73215 73955])
             ("CShaderPrg_Get_ConnectorShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [73258 73275]))                  
+                        (reparse-symbol arg-sub-list) [74000 74017]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [73215 73341])
+                nil [73957 74083])
             ("CShaderPrg_Get_DefaultShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [73384 73401]))                  
+                        (reparse-symbol arg-sub-list) [74126 74143]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [73343 73893])
+                nil [74085 74635])
             ("CShaderPrg_Get_DefaultScreenShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [73942 73959]))                  
+                        (reparse-symbol arg-sub-list) [74684 74701]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [73895 74506])
+                nil [74637 75248])
             ("CShaderPrg_Get_CylinderShaderImpl" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [74554 74571])
-                    ("set_current_shader" variable (:type "short") (reparse-symbol arg-sub-list) [74572 74597]))                  
+                        (reparse-symbol arg-sub-list) [75296 75313])
+                    ("set_current_shader" variable (:type "short") (reparse-symbol arg-sub-list) [75314 75339]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [74508 75067])
+                nil [75250 75835])
             ("CShaderPrg_Get_CylinderShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [75111 75128]))                  
+                        (reparse-symbol arg-sub-list) [75879 75896]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [75069 75181])
+                nil [75837 75949])
             ("CShaderPrg_Get_CylinderShader_NoSet" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [75231 75248]))                  
+                        (reparse-symbol arg-sub-list) [75999 76016]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [75183 75301])
+                nil [75951 76069])
             ("CShaderPrg_Get_Current_Shader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [75345 75362]))                  
+                        (reparse-symbol arg-sub-list) [76113 76130]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [75303 75404])
+                nil [76071 76172])
             ("CShaderPrg_Get_BackgroundShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [75450 75467]))                  
+                        (reparse-symbol arg-sub-list) [76218 76235]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [75406 75851])
+                nil [76174 76619])
             ("CShaderPrg_Enable_BackgroundShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [75900 75917]))                  
+                        (reparse-symbol arg-sub-list) [76668 76685]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [75853 76403])
+                nil [76621 77171])
             ("CShaderPrg_Enable_FXAAShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [76446 76463]))                  
+                        (reparse-symbol arg-sub-list) [77214 77231]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [76405 77152])
+                nil [77173 77920])
             ("CShaderPrg_Enable_TriLinesShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [77199 77216]))                  
+                        (reparse-symbol arg-sub-list) [77967 77984]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [77154 78779])
+                nil [77922 79547])
             ("CShaderPrg_Enable_SMAAShaderImpl" function
                (:prototype-flag t
                 :pointer 1
@@ -1551,112 +1551,112 @@
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [78826 78843])
+                        (reparse-symbol arg-sub-list) [79594 79611])
                     ("shaderName" variable
                        (:pointer 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [78844 78861]))                  
+                        (reparse-symbol arg-sub-list) [79612 79629]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [78781 78862])
+                nil [79549 79630])
             ("CShaderPrg_Enable_SMAA1Shader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [78906 78923]))                  
+                        (reparse-symbol arg-sub-list) [79674 79691]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [78864 79586])
+                nil [79632 80354])
             ("CShaderPrg_Enable_SMAA2Shader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [79630 79647]))                  
+                        (reparse-symbol arg-sub-list) [80398 80415]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [79588 80599])
+                nil [80356 81367])
             ("CShaderPrg_Enable_SMAA3Shader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [80643 80660]))                  
+                        (reparse-symbol arg-sub-list) [81411 81428]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [80601 81364])
+                nil [81369 82132])
             ("CShaderPrg_Enable_SMAAShaderImpl" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [81411 81428])
+                        (reparse-symbol arg-sub-list) [82179 82196])
                     ("shaderName" variable
                        (:pointer 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [81429 81446]))                  
+                        (reparse-symbol arg-sub-list) [82197 82214]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [81366 83100])
+                nil [82134 83868])
             ("CShaderMgr_Reload_Shader_Impl" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [83137 83153])
+                        (reparse-symbol arg-sub-list) [83905 83921])
                     ("lookupVS" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [83154 83177])
+                        (reparse-symbol arg-sub-list) [83922 83945])
                     ("lookupFS" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [83178 83201])
+                        (reparse-symbol arg-sub-list) [83946 83969])
                     ("filenameVS" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [83202 83227])
+                        (reparse-symbol arg-sub-list) [83970 83995])
                     ("filenameFS" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [83228 83253])
+                        (reparse-symbol arg-sub-list) [83996 84021])
                     ("headerVS" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [83254 83277])
+                        (reparse-symbol arg-sub-list) [84022 84045])
                     ("headerFS" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [83278 83301])
+                        (reparse-symbol arg-sub-list) [84046 84069])
                     ("shaderName" variable
                        (:reference 1
                         :constant-flag t
                         :type ("string" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [83302 83327]))                  
+                        (reparse-symbol arg-sub-list) [84070 84095]))                  
                 :type "void")
-                nil [83102 83715])
+                nil [83870 84483])
             ("CShaderMgr_Reload_FXAA_Shaders" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [83753 83769]))                  
+                        (reparse-symbol arg-sub-list) [84521 84537]))                  
                 :type "void")
-                nil [83717 83981])
+                nil [84485 84749])
             ("CShaderMgr_Reload_SMAA_Shaders" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [84019 84035]))                  
+                        (reparse-symbol arg-sub-list) [84787 84803]))                  
                 :type "void")
-                nil [83983 84810])
+                nil [84751 85578])
             ("CShaderPrg_Enable_LabelShaderImpl" function
                (:prototype-flag t
                 :pointer 1
@@ -1664,225 +1664,225 @@
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [84858 84875])
+                        (reparse-symbol arg-sub-list) [85626 85643])
                     ("shaderPrg" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [84876 84898]))                  
+                        (reparse-symbol arg-sub-list) [85644 85666]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [84812 84899])
+                nil [85580 85667])
             ("CShaderPrg_Enable_LabelScreenShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [84949 84966]))                  
+                        (reparse-symbol arg-sub-list) [85717 85734]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [84901 85174])
+                nil [85669 85942])
             ("CShaderPrg_Enable_LabelShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [85218 85235]))                  
+                        (reparse-symbol arg-sub-list) [85986 86003]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [85176 85437])
+                nil [85944 86205])
             ("CShaderPrg_Enable_ScreenShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [85482 85499]))                  
+                        (reparse-symbol arg-sub-list) [86250 86267]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [85439 85702])
+                nil [86207 86470])
             ("CShaderPrg_Enable_RampShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [85745 85762]))                  
+                        (reparse-symbol arg-sub-list) [86513 86530]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [85704 85963])
+                nil [86472 86731])
             ("getContentScaleFactor" function
                (:prototype-flag t
                 :type "float")
-                nil [85976 86006])
+                nil [86744 86774])
             ("CShaderPrg_Enable_LabelShaderImpl" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [86054 86071])
+                        (reparse-symbol arg-sub-list) [86822 86839])
                     ("shaderPrg" variable
                        (:pointer 1
                         :type ("CShaderPrg" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [86072 86094]))                  
+                        (reparse-symbol arg-sub-list) [86840 86862]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [86008 90233])
+                nil [86776 91001])
             ("CShaderPrg_Get_LabelShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [90274 90291]))                  
+                        (reparse-symbol arg-sub-list) [91042 91059]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [90235 90771])
+                nil [91003 91539])
             ("CShaderPrg_Get_LabelScreenShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [90818 90835]))                  
+                        (reparse-symbol arg-sub-list) [91586 91603]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [90773 91376])
+                nil [91541 92144])
             ("CShaderPrg_Get_ScreenShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [91418 91435]))                  
+                        (reparse-symbol arg-sub-list) [92186 92203]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [91378 91545])
+                nil [92146 92313])
             ("CShaderPrg_Get_RampShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [91585 91602]))                  
+                        (reparse-symbol arg-sub-list) [92353 92370]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [91547 91661])
+                nil [92315 92429])
             ("CShaderPrg_Get_IndicatorShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [91706 91723]))                  
+                        (reparse-symbol arg-sub-list) [92474 92491]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [91663 92219])
+                nil [92431 92987])
             ("CShaderPrg_Enable_IndicatorShader" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [92267 92284]))                  
+                        (reparse-symbol arg-sub-list) [93035 93052]))                  
                 :type ("CShaderPrg" type (:type "class") nil nil))
-                nil [92221 93315])
+                nil [92989 94083])
             ("ShaderMgrResetUniformSet" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [93348 93365]))                  
+                        (reparse-symbol arg-sub-list) [94116 94133]))                  
                 :type "void")
-                nil [93318 93521])
+                nil [94086 94289])
             ("CShaderPrg_SetIsPicking" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [93552 93569])
-                    ("is_picking" variable (:type "int") (reparse-symbol arg-sub-list) [93570 93585]))                  
+                        (reparse-symbol arg-sub-list) [94320 94337])
+                    ("is_picking" variable (:type "int") (reparse-symbol arg-sub-list) [94338 94353]))                  
                 :type "void")
-                nil [93523 93629])
+                nil [94291 94397])
             ("CShaderPrg_GetIsPicking" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [93658 93675]))                  
+                        (reparse-symbol arg-sub-list) [94426 94443]))                  
                 :type "int")
-                nil [93630 93713])
+                nil [94398 94481])
             ("CShaderPrg_SetDepthMap" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [93760 93777])
-                    ("depth_map" variable (:type "int") (reparse-symbol arg-sub-list) [93778 93792]))                  
+                        (reparse-symbol arg-sub-list) [94528 94545])
+                    ("depth_map" variable (:type "int") (reparse-symbol arg-sub-list) [94546 94560]))                  
                 :type "void")
-                nil [93732 93834])
+                nil [94500 94602])
             ("CShaderPrg_SetDepthMapWrite" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [93868 93885])
-                    ("depth_map_write" variable (:type "int") (reparse-symbol arg-sub-list) [93886 93906]))                  
+                        (reparse-symbol arg-sub-list) [94636 94653])
+                    ("depth_map_write" variable (:type "int") (reparse-symbol arg-sub-list) [94654 94674]))                  
                 :type "void")
-                nil [93835 93960])
+                nil [94603 94728])
             ("CShaderPrg_GetDepthMap" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [93988 94005]))                  
+                        (reparse-symbol arg-sub-list) [94756 94773]))                  
                 :type "int")
-                nil [93961 94042])
+                nil [94729 94810])
             ("CShaderPrg_GetDepthMapWrite" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [94075 94092]))                  
+                        (reparse-symbol arg-sub-list) [94843 94860]))                  
                 :type "int")
-                nil [94043 94135])
-            ("SPHEREDEPTHTEXTUREWIDTH" variable (:constant-flag t) nil [94145 94168])
-            ("COPY_COLOR_SETTING_INTO_ARRAY" variable (:constant-flag t) nil [94182 94211])
+                nil [94811 94903])
+            ("SPHEREDEPTHTEXTUREWIDTH" variable (:constant-flag t) nil [94913 94936])
+            ("COPY_COLOR_SETTING_INTO_ARRAY" variable (:constant-flag t) nil [94950 94979])
             ("CShaderPrg_Generate_SphereDepthMapTexture" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [94750 94767]))                  
+                        (reparse-symbol arg-sub-list) [95518 95535]))                  
                 :type "void")
-                nil [94703 103634])
+                nil [95471 104402])
             ("CShaderMgr_Set_Reload_Bits" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [103676 103692])
-                    ("bits" variable (:type "int") (reparse-symbol arg-sub-list) [103693 103702]))                  
+                        (reparse-symbol arg-sub-list) [104444 104460])
+                    ("bits" variable (:type "int") (reparse-symbol arg-sub-list) [104461 104470]))                  
                 :type "void")
-                nil [103644 103774])
+                nil [104412 104542])
             ("CShaderMgr_Check_Reload" function
                (:arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [103805 103821]))                  
+                        (reparse-symbol arg-sub-list) [104573 104589]))                  
                 :type "void")
-                nil [103776 104634])
+                nil [104544 105402])
             ("CShaderMgr_GetLineWidthRange" function
                (:pointer 1
                 :arguments 
                   ( ("G" variable
                        (:pointer 1
                         :type ("PyMOLGlobals" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [104672 104688]))                  
+                        (reparse-symbol arg-sub-list) [105440 105456]))                  
                 :type ("GLint" type (:type "class") nil nil))
-                nil [104636 104753]))          
+                nil [105404 105521]))          
       :file "ShaderMgr.cpp"
-      :pointmax 104754
-      :fsize 104750
-      :lastmodtime '(21578 28715 0 0)
+      :pointmax 105522
+      :fsize 105521
+      :lastmodtime '(21582 35460 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("DEFAULTSCREEN_FS_FILENAME" . ((string "\"defaultscreen.fs\"" 5631 . 5649)))
-          ("SPHEREDEPTHTEXTUREWIDTH" . ((number "256" 94166 . 94169)))
+          ("SPHEREDEPTHTEXTUREWIDTH" . ((number "256" 94937 . 94940)))
           ("DEFAULT_FS_FILENAME" . ((string "\"default.fs\"" 5387 . 5399)))
-          ("IFNDEF" . ((number "2" 14389 . 14390)))
+          ("IFNDEF" . ((number "2" 14926 . 14927)))
           ("SUPPRESS_GEOMETRY_SHADER_ERRORS")
           ("WARNING_IF_GLERROR" (spp-arg-list ("msg") 1352 . 1357) . ((semantic-list "{		\\
   GLenum err; \\
@@ -1891,30 +1891,30 @@
   } \\
 }" 1358 . 1504)))
           ("CONNECTOR_VS_FILENAME" . ((string "\"connector.vs\"" 5438 . 5452)))
-          ("ENDIF" . ((number "8" 14451 . 14452)))
+          ("ENDIF" . ((number "8" 14988 . 14989)))
           ("CONNECTOR_GS_NUM_VERTICES" . ((number "31" 1250 . 1252)))
-          ("FREE_AND_REPLACE_WITH" (spp-arg-list ("var" "with") 18656 . 18667) . 
-              ((IF "if" 18668 . 18670) (semantic-list "(var)" 18671 . 18676) (symbol "free" 18677 . 18681) (semantic-list "(var)" 18681 . 18686) (punctuation ";" 18686 . 18687) (symbol "var" 18689 . 18692) (punctuation "=" 18693 . 18694) (symbol "with" 18695 . 18699) (punctuation ";" 18699 . 18700)))
+          ("FREE_AND_REPLACE_WITH" (spp-arg-list ("var" "with") 19193 . 19204) . 
+              ((IF "if" 19205 . 19207) (semantic-list "(var)" 19208 . 19213) (symbol "free" 19214 . 19218) (semantic-list "(var)" 19218 . 19223) (punctuation ";" 19223 . 19224) (symbol "var" 19226 . 19229) (punctuation "=" 19230 . 19231) (symbol "with" 19232 . 19236) (punctuation ";" 19236 . 19237)))
           ("MAX_LOG_LEN" . ((number "1024" 1109 . 1113)))
-          ("SPHERE_VS_FILENAME" . ((string "\"sphere_ios.vs\"" 5797 . 5812)))
-          ("MASK_SHADERS_PRESENT_GEOMETRY" . ((number "0x2" 6072 . 6075) (punctuation ";" 6075 . 6076)))
-          ("ELSE" . ((number "4" 14421 . 14422)))
-          ("COPY_COLOR_SETTING_INTO_ARRAY" (spp-arg-list ("LIGHTNUM" "ARRAYPOS") 94208 . 94228) . 
-              ((symbol "copy3f" 94235 . 94241) (semantic-list "(SettingGetGlobal_3fv(G, cSetting_ ## LIGHTNUM), &light_positions[ARRAYPOS])" 94241 . 94317) (punctuation ";" 94317 . 94318) (symbol "normalize3f" 94325 . 94336) (semantic-list "(&light_positions[ARRAYPOS])" 94336 . 94364) (punctuation ";" 94364 . 94365)))
-          ("STEP_FOR_BUF" . ((number "100" 54951 . 54954)))
+          ("SPHERE_VS_FILENAME" . ((string "\"sphere_ios.vs\"" 5823 . 5838)))
+          ("MASK_SHADERS_PRESENT_GEOMETRY" . ((number "0x2" 6300 . 6303) (punctuation ";" 6303 . 6304)))
+          ("ELSE" . ((number "4" 14958 . 14959)))
+          ("COPY_COLOR_SETTING_INTO_ARRAY" (spp-arg-list ("LIGHTNUM" "ARRAYPOS") 94979 . 94999) . 
+              ((symbol "copy3f" 95006 . 95012) (semantic-list "(SettingGetGlobal_3fv(G, cSetting_ ## LIGHTNUM), &light_positions[ARRAYPOS])" 95012 . 95088) (punctuation ";" 95088 . 95089) (symbol "normalize3f" 95096 . 95107) (semantic-list "(&light_positions[ARRAYPOS])" 95107 . 95135) (punctuation ";" 95135 . 95136)))
+          ("STEP_FOR_BUF" . ((number "100" 55670 . 55673)))
           ("CONNECTOR_FS_FILENAME" . ((string "\"connector.fs\"" 5528 . 5542)))
-          ("CYLINDER_VS_FILENAME" . ((string "\"cylinder_ios.vs\"" 5705 . 5722)))
-          ("MIN_CHAR" (spp-arg-list ("x" "y") 9875 . 9880) . ((semantic-list "(!x ? y : !y ? x : ((x < y) ? x : y))" 9881 . 9918)))
-          ("IFDEF" . ((number "1" 14347 . 14348)))
-          ("LOOKUP" . ((number "32" 14514 . 14516)))
+          ("CYLINDER_VS_FILENAME" . ((string "\"cylinder_ios.vs\"" 5731 . 5748)))
+          ("MIN_CHAR" (spp-arg-list ("x" "y") 10103 . 10108) . ((semantic-list "(!x ? y : !y ? x : ((x < y) ? x : y))" 10109 . 10146)))
+          ("IFDEF" . ((number "1" 14884 . 14885)))
+          ("LOOKUP" . ((number "32" 15051 . 15053)))
           ("DEFAULTSCREEN_VS_FILENAME" . ((string "\"defaultscreen.vs\"" 5578 . 5596)))
-          ("SPHERE_FS_FILENAME" . ((string "\"sphere_ios.fs\"" 5840 . 5855)))
-          ("MASK_SHADERS_PRESENT_SMAA" . ((number "0x4" 6111 . 6114) (punctuation ";" 6114 . 6115)))
+          ("SPHERE_FS_FILENAME" . ((string "\"sphere_ios.fs\"" 5866 . 5881)))
+          ("MASK_SHADERS_PRESENT_SMAA" . ((number "0x4" 6339 . 6342) (punctuation ";" 6342 . 6343)))
           ("DEFAULT_VS_FILENAME" . ((string "\"default.vs\"" 5346 . 5358)))
           ("CONNECTOR_GS_FILENAME" . ((string "\"connector.gs\"" 5483 . 5497)))
-          ("INCLUDE" . ((number "16" 14481 . 14483)))
+          ("INCLUDE" . ((number "16" 15018 . 15020)))
           ("SCENEGETIMAGESIZE" . ((symbol "SceneGetWidthHeight" 1280 . 1299)))
-          ("CYLINDER_FS_FILENAME" . ((string "\"cylinder_ios.fs\"" 5752 . 5769)))
+          ("CYLINDER_FS_FILENAME" . ((string "\"cylinder_ios.fs\"" 5778 . 5795)))
           )
 )
     (semanticdb-table "os_gl.h"
@@ -1926,9 +1926,1449 @@
       :fsize 1018
       :lastmodtime '(21569 20033 0 0))
     (semanticdb-table "ShaderMgr.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_SHADER_MGR_H" variable (:constant-flag t) nil [681 694])
+            ("os_gl.h" include nil nil [696 714])
+            ("PyMOLGlobals.h" include nil nil [715 740])
+            ("Executive_pre.h" include nil nil [741 767])
+            ("OVContext.h" include nil nil [768 790])
+            ("Rep.h" include nil nil [791 807])
+            ("map" include (:system-flag t) nil [808 822])
+            ("set" include (:system-flag t) nil [823 837])
+            ("string" include (:system-flag t) nil [838 855])
+            ("GL_FRAGMENT_PROGRAM_ARB" variable (:constant-flag t) nil [897 920])
+            ("CShaderMgr" type
+               (:prototype t
+                :type "class")
+                nil [2290 2307])
+            ("ShaderInfo" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2328 2335])
+                    ("name" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2338 2391])
+                    ("geomfile" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2338 2391])
+                    ("vertfile" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2338 2391])
+                    ("fragfile" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2338 2391])
+                    ("geom" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2394 2425])
+                    ("vert" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2394 2425])
+                    ("frag" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [2394 2425])
+                    ("bindAttribLocations" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2429 2476])
+                    ("gsInput" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2480 2505])
+                    ("gsOutput" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2480 2505])
+                    ("ngsVertsOut" variable (:type "int") (reparse-symbol classsubparts) [2508 2524])
+                    ("ShaderInfo" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2539 2563])
+                            ("geomfile" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2571 2599])
+                            ("vertfile" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2600 2628])
+                            ("fragfile" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2629 2657])
+                            ("geomArg" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2664 2684])
+                            ("vertArg" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2685 2705])
+                            ("fragArg" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2706 2726]))                          
+                        :type ("ShaderInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2528 2924])
+                    ("reload" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("G" variable
+                               (:pointer 1
+                                :type ("PyMOLGlobals" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2939 2956]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2927 2957])
+                    ("setGeometryShaderInfo" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("gsInput" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2987 3002])
+                            ("gsOutput" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3003 3019])
+                            ("ngsVertsOut" variable (:type "int") (reparse-symbol arg-sub-list) [3020 3036]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2960 3037]))                  
+                :type "class")
+                nil [2309 3040])
+            ("CShaderPrg" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3096 3103])
+                    ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3106 3123])
+                    ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3169 3186])
+                    ("id" variable (:type "int") (reparse-symbol classsubparts) [3217 3224])
+                    ("gid" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3274 3285])
+                    ("vid" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3288 3299])
+                    ("fid" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3302 3313])
+                    ("frag" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3352 3369])
+                    ("vert" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3377 3394])
+                    ("geom" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3402 3419])
+                    ("uniform_set" variable (:type "int") (reparse-symbol classsubparts) [3428 3445])
+                    ("CShaderPrg" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3470 3494]))                          
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3459 3495]))                  
+                :type "class")
+                nil [3077 3498])
+            ("CShaderMgr" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3520 3527])
+                    ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3530 3547])
+                    ("programs" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("CShaderPrg" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3550 3594])
+                    ("ShadersPresent" variable (:type "int") (reparse-symbol classsubparts) [3597 3616])
+                    ("vbos_to_free" variable
+                       (:pointer 1
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3619 3640])
+                    ("number_of_vbos_to_free" variable (:type "int") (reparse-symbol classsubparts) [3643 3670])
+                    ("current_shader" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3673 3700])
+                    ("stereo_flag" variable (:type "int") (reparse-symbol classsubparts) [3703 3719])
+                    ("is_picking" variable (:type "int") (reparse-symbol classsubparts) [3756 3771])
+                    ("depth_map" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3792 3809])
+                    ("depth_map_write" variable (:type "int") (reparse-symbol classsubparts) [3812 3832])
+                    ("sphereDepthMappingTexture" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3835 3868])
+                    ("ShaderKeyWords" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4051 4088])
+                    ("shader_replacement_strings" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4091 4153])
+                    ("shader_include_values" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4205 4255])
+                    ("shader_update_when_include_filename" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4308 4379])
+                    ("shader_update_when_include" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4393 4455])
+                    ("shader_info" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("ShaderInfo" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4458 4505])
+                    ("print_warnings" variable (:type "short") (reparse-symbol classsubparts) [4508 4529])
+                    ("reload_bits" variable (:type "int") (reparse-symbol classsubparts) [4532 4548])
+                    ("line_width_range" variable
+                       (:dereference 1
+                        :type ("GLint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4551 4577]))                  
+                :type "class")
+                nil [3500 4580])
+            ("OVreturns.h" include nil nil [4582 4604])
+            ("ShaderMgrInit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4713 4730]))                  
+                :type ("OVstatus" type (:type "class") nil nil))
+                nil [4690 4731])
+            ("ShaderMgrConfig" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4834 4851]))                  
+                :type "void")
+                nil [4813 4852])
+            ("CShaderMgr_New" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5105 5122]))                  
+                :type ("CShaderMgr" type (:type "class") nil nil))
+                nil [5077 5123])
+            ("CShaderPrg_NewARB" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5155 5172])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5173 5191])
+                    ("vert" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5192 5216])
+                    ("frag" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5217 5241]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [5124 5242])
+            ("CShaderMgr_Delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderMgr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5279 5294]))                  
+                :type "void")
+                nil [5256 5295])
+            ("CShaderMgrFree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5316 5332]))                  
+                :type "void")
+                nil [5296 5333])
+            ("CShaderMgr_AddShaderPrg" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderMgr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5417 5432])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5433 5448]))                  
+                :type "int")
+                nil [5389 5449])
+            ("CShaderMgr_RemoveShaderPrg" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderMgr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5535 5550])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5551 5575]))                  
+                :type "int")
+                nil [5504 5576])
+            ("CShaderMgr_GetShaderPrg" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderMgr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5672 5687])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5688 5706]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [5635 5707])
+            ("CShaderMgr_GetShaderPrg_NoSet" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderMgr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5751 5766])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5767 5785]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [5708 5786])
+            ("CShaderMgr_ShaderPrgExists" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderMgr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5818 5833])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5834 5852]))                  
+                :type "int")
+                nil [5787 5853])
+            ("CShaderMgr_ShadersPresent" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderMgr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5917 5932]))                  
+                :type "int")
+                nil [5887 5933])
+            ("CShaderMgr_GeometryShadersPresent" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderMgr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5972 5987]))                  
+                :type "int")
+                nil [5934 5988])
+            ("CShaderMgr_SMAAShadersPresent" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderMgr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6023 6038]))                  
+                :type "int")
+                nil [5989 6039])
+            ("CShaderPrg_Delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6339 6354]))                  
+                :type "void")
+                nil [6316 6355])
+            ("CShaderPrg_Enable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6392 6407]))                  
+                :type "int")
+                nil [6370 6408])
+            ("CShaderPrg_Disable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6447 6462]))                  
+                :type "int")
+                nil [6424 6463])
+            ("CShaderPrg_DisableARB" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6490 6504]))                  
+                :type "int")
+                nil [6464 6505])
+            ("CShaderPrg_Link" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6551 6566]))                  
+                :type "int")
+                nil [6531 6567])
+            ("CShaderPrg_IsLinked" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6592 6607]))                  
+                :type "int")
+                nil [6568 6608])
+            ("CShaderPrg_Set1i" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6672 6687])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6688 6706])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [6707 6713]))                  
+                :type "int")
+                nil [6651 6714])
+            ("CShaderPrg_Set1f" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6736 6751])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6752 6770])
+                    ("f" variable (:type "float") (reparse-symbol arg-sub-list) [6771 6779]))                  
+                :type "int")
+                nil [6715 6780])
+            ("CShaderPrg_Set2f" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6802 6817])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6818 6836])
+                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [6837 6846])
+                    ("f2" variable (:type "float") (reparse-symbol arg-sub-list) [6847 6856]))                  
+                :type "int")
+                nil [6781 6857])
+            ("CShaderPrg_Set3f" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6879 6894])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6895 6913])
+                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [6914 6923])
+                    ("f2" variable (:type "float") (reparse-symbol arg-sub-list) [6924 6933])
+                    ("f3" variable (:type "float") (reparse-symbol arg-sub-list) [6934 6943]))                  
+                :type "int")
+                nil [6858 6944])
+            ("CShaderPrg_Set4fv" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6967 6982])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6983 7001])
+                    ("f" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [7002 7011]))                  
+                :type "int")
+                nil [6945 7012])
+            ("CShaderPrg_Set3fv" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7035 7050])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7051 7069])
+                    ("f" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [7070 7079]))                  
+                :type "int")
+                nil [7013 7080])
+            ("CShaderPrg_Set4f" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7102 7117])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7118 7136])
+                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [7137 7146])
+                    ("f2" variable (:type "float") (reparse-symbol arg-sub-list) [7147 7156])
+                    ("f3" variable (:type "float") (reparse-symbol arg-sub-list) [7157 7166])
+                    ("f4" variable (:type "float") (reparse-symbol arg-sub-list) [7167 7176]))                  
+                :type "int")
+                nil [7081 7177])
+            ("CShaderPrg_SetMat3f" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7202 7217])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7218 7236])
+                    ("m" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7237 7255]))                  
+                :type "int")
+                nil [7178 7256])
+            ("CShaderPrg_SetMat4f" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7281 7296])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7297 7315])
+                    ("m" variable
+                       (:pointer 1
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7316 7328]))                  
+                :type "int")
+                nil [7257 7329])
+            ("CShaderPrg_SetMat3fc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7431 7446])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7447 7465])
+                    ("m" variable
+                       (:pointer 1
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7466 7478]))                  
+                :type "int")
+                nil [7406 7479])
+            ("CShaderPrg_SetMat4fc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7505 7520])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7521 7539])
+                    ("m" variable
+                       (:pointer 1
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7540 7552]))                  
+                :type "int")
+                nil [7480 7553])
+            ("CShaderPrg_GetAttribLocation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7588 7603])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7604 7622]))                  
+                :type "int")
+                nil [7555 7623])
+            ("CShaderPrg_SetAttrib4fLocation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7660 7675])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7676 7694])
+                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [7695 7704])
+                    ("f2" variable (:type "float") (reparse-symbol arg-sub-list) [7705 7714])
+                    ("f3" variable (:type "float") (reparse-symbol arg-sub-list) [7715 7724])
+                    ("f4" variable (:type "float") (reparse-symbol arg-sub-list) [7725 7734]))                  
+                :type "void")
+                nil [7624 7735])
+            ("CShaderPrg_SetAttrib1fLocation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7772 7787])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7788 7806])
+                    ("f1" variable (:type "float") (reparse-symbol arg-sub-list) [7807 7816]))                  
+                :type "void")
+                nil [7736 7817])
+            ("CShaderPrg_SetLightingEnabled" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7853 7868])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [7869 7873]))                  
+                :type "int")
+                nil [7819 7874])
+            ("CShaderMgr_AddVBOsToFree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderMgr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7906 7921])
+                    ("vboid" variable
+                       (:pointer 1
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7922 7936])
+                    ("nvbos" variable (:type "int") (reparse-symbol arg-sub-list) [7937 7947]))                  
+                :type "void")
+                nil [7876 7948])
+            ("CShaderMgr_AddVBOToFree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderMgr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7978 7993])
+                    ("vboid" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7994 8007]))                  
+                :type "void")
+                nil [7949 8008])
+            ("CShaderMgr_FreeAllVBOs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("CShaderMgr" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8037 8052]))                  
+                :type "void")
+                nil [8009 8053])
+            ("CShaderPrg_Set_Stereo_And_AnaglyphMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8099 8116])
+                    ("shaderPrg" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8117 8140]))                  
+                :type "void")
+                nil [8055 8141])
+            ("CShaderPrg_Enable_DefaultShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8187 8204]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [8143 8205])
+            ("CShaderPrg_Enable_DefaultShaderWithSettings" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8262 8279])
+                    ("set1" variable
+                       (:pointer 1
+                        :type ("CSetting" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8280 8296])
+                    ("set2" variable
+                       (:pointer 1
+                        :type ("CSetting" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8297 8313]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [8206 8314])
+            ("CShaderPrg_Enable_DefaultScreenShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8365 8382]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [8315 8383])
+            ("CShaderPrg_Enable_CylinderShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8429 8446]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [8384 8447])
+            ("CShaderPrg_Enable_DefaultSphereShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8498 8515]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [8448 8516])
+            ("CShaderPrg_Enable_SphereShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8560 8577])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8578 8589]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [8517 8590])
+            ("CShaderPrg_Enable_SphereShaderARB" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8637 8654]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [8591 8655])
+            ("CShaderPrg_Enable_RampShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8697 8714]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [8656 8715])
+            ("CShaderPrg_Enable_ConnectorShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8762 8779]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [8716 8780])
+            ("CShaderPrg_Enable_FXAAShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8823 8840]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [8782 8841])
+            ("CShaderPrg_Enable_TriLinesShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8887 8904]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [8842 8905])
+            ("CShaderPrg_Enable_SMAA1Shader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8948 8965]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [8906 8966])
+            ("CShaderPrg_Enable_SMAA2Shader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9009 9026]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [8967 9027])
+            ("CShaderPrg_Enable_SMAA3Shader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9070 9087]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9028 9088])
+            ("CShaderPrg_Get_ScreenShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9130 9147]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9090 9148])
+            ("CShaderPrg_Get_ConnectorShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9192 9209]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9149 9210])
+            ("CShaderPrg_Get_DefaultShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9252 9269]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9211 9270])
+            ("CShaderPrg_Get_DefaultScreenShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9318 9335]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9271 9336])
+            ("CShaderPrg_Get_CylinderShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9379 9396]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9337 9397])
+            ("CShaderPrg_Get_CylinderShader_NoSet" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9446 9463]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9398 9464])
+            ("CShaderPrg_Get_DefaultSphereShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9512 9529]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9465 9530])
+            ("CShaderPrg_Get_RampShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9569 9586]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9531 9587])
+            ("CShaderPrg_Get_Current_Shader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9631 9648]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9589 9649])
+            ("CShaderPrg_Get_IndicatorShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9694 9711]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9651 9712])
+            ("CShaderPrg_Enable_IndicatorShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9759 9776]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9713 9777])
+            ("CShaderPrg_Enable_BackgroundShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9826 9843]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9779 9844])
+            ("CShaderPrg_Get_BackgroundShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9889 9906]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9845 9907])
+            ("CShaderPrg_Enable_ScreenShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9952 9969]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9909 9970])
+            ("CShaderPrg_Enable_LabelScreenShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10019 10036]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [9971 10037])
+            ("CShaderPrg_Enable_LabelShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10080 10097]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [10038 10098])
+            ("CShaderPrg_Get_LabelShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10138 10155]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [10099 10156])
+            ("CShaderPrg_Get_LabelScreenShader" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10202 10219]))                  
+                :type ("CShaderPrg" type (:type "class") nil nil))
+                nil [10157 10220])
+            ("ShaderMgrResetUniformSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10252 10269]))                  
+                :type "void")
+                nil [10222 10270])
+            ("CShaderPrg_SetIsPicking" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10301 10318])
+                    ("is_picking" variable (:type "int") (reparse-symbol arg-sub-list) [10319 10334]))                  
+                :type "void")
+                nil [10272 10335])
+            ("CShaderPrg_SetDepthMap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10382 10399])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [10400 10405]))                  
+                :type "void")
+                nil [10354 10406])
+            ("CShaderPrg_SetDepthMapWrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10440 10457])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [10458 10463]))                  
+                :type "void")
+                nil [10407 10464])
+            ("CShaderPrg_GetDepthMap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10492 10510]))                  
+                :type "int")
+                nil [10465 10511])
+            ("CShaderPrg_GetDepthMapWrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10544 10562]))                  
+                :type "int")
+                nil [10512 10563])
+            ("CShaderPrg_Generate_SphereDepthMapTexture" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10611 10628]))                  
+                :type "void")
+                nil [10564 10629])
+            ("CShaderPrg_SetFogUniforms" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10669 10686])
+                    ("shaderPrg" variable
+                       (:pointer 1
+                        :type ("CShaderPrg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10687 10710]))                  
+                :type "void")
+                nil [10638 10711])
+            ("CShaderPrg_Update_Shaders_For_Background" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10758 10774]))                  
+                :type "void")
+                nil [10712 10775])
+            ("CShaderPrg_Reload" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10798 10815])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10816 10840])
+                    ("v" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10841 10862])
+                    ("f" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10863 10884]))                  
+                :type "int")
+                nil [10776 10885])
+            ("CShaderPrg_ReloadImpl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10912 10929])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10930 10954])
+                    ("g" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10955 10976])
+                    ("v" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10977 10998])
+                    ("f" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10999 11020])
+                    ("gsInput" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11021 11036])
+                    ("gsOutput" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11037 11053])
+                    ("ngsVertsOut" variable (:type "int") (reparse-symbol arg-sub-list) [11054 11070]))                  
+                :type "int")
+                nil [10886 11071])
+            ("CShaderMgr_Reload_Shader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11102 11118])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11119 11143]))                  
+                :type "void")
+                nil [11072 11144])
+            ("CShaderMgr_Reload_FXAA_Shaders" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11181 11197]))                  
+                :type "void")
+                nil [11145 11198])
+            ("CShaderMgr_Reload_SMAA_Shaders" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11235 11251]))                  
+                :type "void")
+                nil [11199 11252])
+            ("CShaderMgr_Reload_Default_Shader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11291 11307]))                  
+                :type "void")
+                nil [11253 11308])
+            ("CShaderMgr_Reload_Connector_Shader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11349 11365]))                  
+                :type "void")
+                nil [11309 11366])
+            ("CShaderMgr_Reload_BG_Shader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11400 11416]))                  
+                :type "void")
+                nil [11367 11417])
+            ("CShaderMgr_Reload_Cylinder_Shader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11457 11473]))                  
+                :type "void")
+                nil [11418 11474])
+            ("CShaderMgr_Reload_Label_Shader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11511 11527]))                  
+                :type "void")
+                nil [11475 11528])
+            ("CShaderMgr_Reload_Sphere_Shader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11566 11582]))                  
+                :type "void")
+                nil [11529 11583])
+            ("CShaderMgr_Reload_Indicator_Shader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11624 11640]))                  
+                :type "void")
+                nil [11584 11641])
+            ("CShaderMgr_Reload_Volume_Shader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11679 11695]))                  
+                :type "void")
+                nil [11642 11696])
+            ("CShaderMgr_Reload_TriLines_Shader" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11736 11752]))                  
+                :type "void")
+                nil [11697 11753])
+            ("CShaderMgr_Reload_Shader_Variables" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11795 11812]))                  
+                :type "void")
+                nil [11755 11813])
+            ("CShaderPrg_Reload_CallComputeColorForLight" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11862 11879])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11880 11904]))                  
+                :type "void")
+                nil [11814 11905])
+            ("CShaderPrg_Reload_All_Shaders_For_CallComputeColorForLight" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11970 11987]))                  
+                :type "void")
+                nil [11906 11988])
+            ("CShaderPrg_Reload_All_Shaders" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12024 12041]))                  
+                :type "void")
+                nil [11989 12042])
+            ("CShaderMgr_Set_Reload_Bits" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12075 12091])
+                    ("bits" variable (:type "int") (reparse-symbol arg-sub-list) [12092 12101]))                  
+                :type "void")
+                nil [12043 12102])
+            ("CShaderMgr_Check_Reload" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12132 12148]))                  
+                :type "void")
+                nil [12103 12149])
+            ("CShaderPrg_Invalidate_All_Shaders" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12189 12206]))                  
+                :type "void")
+                nil [12150 12207])
+            ("CShaderMgr_GetLineWidthRange" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12245 12261]))                  
+                :type ("GLint" type (:type "class") nil nil))
+                nil [12209 12262])
+            ("RELOAD_ALL_SHADERS" variable (:constant-flag t) nil [12350 12368])
+            ("RELOAD_SHADERS_FOR_LIGHTING" variable (:constant-flag t) nil [12474 12501])
+            ("RELOAD_SHADERS_UPDATE_FOR_BACKGROUND" variable (:constant-flag t) nil [12598 12634])
+            ("RELOAD_SHADERS_CYLINDER" variable (:constant-flag t) nil [12711 12734])
+            ("RELOAD_SHADERS_CONNECTOR" variable (:constant-flag t) nil [12746 12770])
+            ("RELOAD_AA_SHADERS" variable (:constant-flag t) nil [12783 12800])
+            ("VERTEX_POS_SIZE" variable (:constant-flag t) nil [12813 12828])
+            ("VERTEX_COLOR_SIZE" variable (:constant-flag t) nil [12842 12859])
+            ("VERTEX_POS" variable (:constant-flag t) nil [12872 12882])
+            ("VERTEX_NORMAL" variable (:constant-flag t) nil [12896 12909])
+            ("VERTEX_COLOR" variable (:constant-flag t) nil [12920 12932])
+            ("CYLINDER_ORIGIN" variable (:constant-flag t) nil [12945 12960])
+            ("CYLINDER_AXIS" variable (:constant-flag t) nil [12971 12984])
+            ("CYLINDER_COLOR" variable (:constant-flag t) nil [12997 13011])
+            ("CYLINDER_COLOR2" variable (:constant-flag t) nil [13023 13038]))          
       :file "ShaderMgr.h"
+      :pointmax 13049
       :fsize 13048
-      :lastmodtime '(21577 8243 0 0))
+      :lastmodtime '(21577 8243 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GL_FRAGMENT_PROGRAM_ARB" . ((number "0x8804" 945 . 951)))
+          ("RELOAD_SHADERS_CONNECTOR" . ((number "16" 12771 . 12773)))
+          ("VERTEX_COLOR" . ((number "2" 12934 . 12935)))
+          ("VERTEX_POS" . ((number "0" 12886 . 12887)))
+          ("RELOAD_SHADERS_CYLINDER" . ((number "8" 12735 . 12736)))
+          ("RELOAD_AA_SHADERS" . ((number "16" 12801 . 12803)))
+          ("VERTEX_POS_SIZE" . ((number "3" 12832 . 12833)))
+          ("RELOAD_SHADERS_UPDATE_FOR_BACKGROUND" . ((number "4" 12635 . 12636)))
+          ("CYLINDER_COLOR2" . ((number "3" 13039 . 13040)))
+          ("CYLINDER_COLOR" . ((number "2" 13013 . 13014)))
+          ("RELOAD_SHADERS_FOR_LIGHTING" . ((number "2" 12502 . 12503)))
+          ("VERTEX_COLOR_SIZE" . ((number "4" 12861 . 12862)))
+          ("CYLINDER_ORIGIN" . ((number "0" 12961 . 12962)))
+          ("CYLINDER_AXIS" . ((number "1" 12987 . 12988)))
+          ("VERTEX_NORMAL" . ((number "1" 12910 . 12911)))
+          ("_SHADER_MGR_H")
+          ("RELOAD_ALL_SHADERS" . ((number "1" 12369 . 12370)))
+          )
+)
     (semanticdb-table "OOMac.h"
       :file "OOMac.h"
       :fsize 993
@@ -1968,7 +3408,47 @@
     (semanticdb-table "Matrix.h"
       :file "Matrix.h"
       :fsize 5070
-      :lastmodtime '(21345 11814 0 0)))
+      :lastmodtime '(21345 11814 0 0))
+    (semanticdb-table "os_predef.h"
+      :file "os_predef.h"
+      :fsize 2405
+      :lastmodtime '(21490 7612 0 0))
+    (semanticdb-table "os_std.h"
+      :file "os_std.h"
+      :fsize 885
+      :lastmodtime '(21345 11814 0 0))
+    (semanticdb-table "Base.h"
+      :file "Base.h"
+      :fsize 3556
+      :lastmodtime '(21363 31699 0 0))
+    (semanticdb-table "Sphere.h"
+      :file "Sphere.h"
+      :fsize 1257
+      :lastmodtime '(21345 11814 0 0))
+    (semanticdb-table "PyMOLGlobals.h"
+      :file "PyMOLGlobals.h"
+      :fsize 6061
+      :lastmodtime '(21577 8243 0 0))
+    (semanticdb-table "Word.h"
+      :file "Word.h"
+      :fsize 4259
+      :lastmodtime '(21568 11570 0 0))
+    (semanticdb-table "Err.h"
+      :file "Err.h"
+      :fsize 1135
+      :lastmodtime '(21370 23520 0 0))
+    (semanticdb-table "MyPNG.h"
+      :file "MyPNG.h"
+      :fsize 1061
+      :lastmodtime '(21345 11814 0 0))
+    (semanticdb-table "Map.h"
+      :file "Map.h"
+      :fsize 2886
+      :lastmodtime '(21345 11814 0 0))
+    (semanticdb-table "Triangle.h"
+      :file "Triangle.h"
+      :fsize 1127
+      :lastmodtime '(21568 13657 0 0)))
   :file "!Users!marques!Development!pymol!layer0!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

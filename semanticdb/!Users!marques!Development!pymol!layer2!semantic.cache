@@ -1,0 +1,1701 @@
+;; Object layer2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "layer2/"
+  :tables
+  (list
+    (semanticdb-table "RepCylBond.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("os_python.h" include nil nil [731 752])
+            ("os_predef.h" include nil nil [754 775])
+            ("os_std.h" include nil nil [776 794])
+            ("os_gl.h" include nil nil [795 812])
+            ("Base.h" include nil nil [814 830])
+            ("OOMac.h" include nil nil [831 848])
+            ("Vector.h" include nil nil [849 867])
+            ("ObjectMolecule.h" include nil nil [868 894])
+            ("RepCylBond.h" include nil nil [895 917])
+            ("Color.h" include nil nil [918 935])
+            ("Setting.h" include nil nil [936 955])
+            ("main.h" include nil nil [956 972])
+            ("Feedback.h" include nil nil [973 993])
+            ("Sphere.h" include nil nil [994 1012])
+            ("ShaderMgr.h" include nil nil [1013 1034])
+            ("Scene.h" include nil nil [1035 1052])
+            ("CGO.h" include nil nil [1053 1068])
+            ("fireMemoryWarning" function
+               (:prototype-flag t
+                :type "void")
+                nil [1099 1124])
+            ("RepCylBond" type
+               (:members 
+                  ( ("R" variable (:type ("Rep" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1473 1479])
+                    ("VR" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1498 1508])
+                    ("Vcgo" variable
+                       (:pointer 1
+                        :type ("CGO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1592 1610])
+                    ("VPcgo" variable
+                       (:pointer 1
+                        :type ("CGO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1592 1610])
+                    ("N" variable (:type "int") (reparse-symbol classsubparts) [1667 1677])
+                    ("NR" variable (:type "int") (reparse-symbol classsubparts) [1667 1677])
+                    ("NEdge" variable (:type "int") (reparse-symbol classsubparts) [1680 1690])
+                    ("VP" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1693 1703])
+                    ("NP" variable (:type "int") (reparse-symbol classsubparts) [1770 1777])
+                    ("VSPC" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1842 1854])
+                    ("SP" variable
+                       (:pointer 1
+                        :type ("SphereRec" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1857 1871])
+                    ("NSPC" variable (:type "int") (reparse-symbol classsubparts) [1874 1883])
+                    ("VarAlpha" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1886 1930])
+                    ("VarAlphaRay" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1886 1930])
+                    ("VarAlphaSph" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1886 1930])
+                    ("shaderCGO" variable
+                       (:pointer 1
+                        :type ("CGO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1933 1948])
+                    ("shaderCGOmode" variable (:type "int") (reparse-symbol classsubparts) [1951 1969]))                  
+                :type "struct")
+                nil [1443 1983])
+            ("RepCylBond" type
+               (:typedef ("RepCylBond" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1443 1983])
+            ("subdivide" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2007 2013])
+                    ("x" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2014 2023])
+                    ("y" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2024 2033]))                  
+                :type "void")
+                nil [1985 2034])
+            ("RepCylinder" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2051 2067])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("RepCylBond" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2068 2082])
+                    ("cgo" variable
+                       (:pointer 1
+                        :type ("CGO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2083 2092])
+                    ("v1" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2093 2103])
+                    ("v2" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2104 2114])
+                    ("nEdge" variable (:type "int") (reparse-symbol arg-sub-list) [2115 2125])
+                    ("frontCap" variable (:type "int") (reparse-symbol arg-sub-list) [2128 2141])
+                    ("endCap" variable (:type "int") (reparse-symbol arg-sub-list) [2142 2153])
+                    ("tube_size" variable (:type "float") (reparse-symbol arg-sub-list) [2154 2170])
+                    ("overlap" variable (:type "float") (reparse-symbol arg-sub-list) [2171 2185])
+                    ("nub" variable (:type "float") (reparse-symbol arg-sub-list) [2186 2196])
+                    ("dir" variable
+                       (:pointer 2
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2197 2209])
+                    ("shader_mode" variable (:type "int") (reparse-symbol arg-sub-list) [2213 2229])
+                    ("v2color" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2230 2246]))                  
+                :type "int")
+                nil [2035 2247])
+            ("RepCylBondFree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepCylBond" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2269 2284]))                  
+                :type "void")
+                nil [2249 2285])
+            ("RepCylBondFree" function
+               (:arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepCylBond" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2307 2322]))                  
+                :type "void")
+                nil [2287 2755])
+            ("RepCylinderBox" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepCylBond" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2776 2790])
+                    ("cgo" variable
+                       (:pointer 1
+                        :type ("CGO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2791 2800])
+                    ("v1" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2801 2811])
+                    ("v2" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2812 2822])
+                    ("tube_size" variable (:type "float") (reparse-symbol arg-sub-list) [2823 2839])
+                    ("overlap" variable (:type "float") (reparse-symbol arg-sub-list) [2845 2859])
+                    ("nub" variable (:type "float") (reparse-symbol arg-sub-list) [2860 2870]))                  
+                :type "int")
+                nil [2757 2871])
+            ("RepCylBondCGOGenerate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepCylBond" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2906 2921])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("RenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2922 2940]))                  
+                :type "int")
+                nil [2873 5422])
+            ("RepCylBondRender" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepCylBond" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5453 5468])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("RenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5469 5487]))                  
+                :type "void")
+                nil [5424 12558])
+            ("RepValence" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepCylBond" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12582 12596])
+                    ("cgo" variable
+                       (:pointer 1
+                        :type ("CGO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12597 12606])
+                    ("n_ptr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12607 12618])
+                    ("vr_ptr" variable
+                       (:pointer 2
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [12646 12661])
+                    ("nr_ptr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12662 12674])
+                    ("v1" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [12697 12707])
+                    ("v2" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [12708 12718])
+                    ("other" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12719 12730])
+                    ("a1" variable (:type "int") (reparse-symbol arg-sub-list) [12739 12746])
+                    ("a2" variable (:type "int") (reparse-symbol arg-sub-list) [12747 12754])
+                    ("coord" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [12755 12768])
+                    ("color1" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [12777 12791])
+                    ("color2" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [12792 12806])
+                    ("ord" variable (:type "int") (reparse-symbol arg-sub-list) [12807 12815])
+                    ("n_edge" variable (:type "int") (reparse-symbol arg-sub-list) [12824 12835])
+                    ("tube_size" variable (:type "float") (reparse-symbol arg-sub-list) [12844 12860])
+                    ("overlap" variable (:type "float") (reparse-symbol arg-sub-list) [12869 12883])
+                    ("nub" variable (:type "float") (reparse-symbol arg-sub-list) [12892 12902])
+                    ("half_bonds" variable (:type "int") (reparse-symbol arg-sub-list) [12903 12918])
+                    ("fixed_r" variable (:type "int") (reparse-symbol arg-sub-list) [12919 12931])
+                    ("scale_r" variable (:type "float") (reparse-symbol arg-sub-list) [12932 12946])
+                    ("shader_mode" variable (:type "short") (reparse-symbol arg-sub-list) [12955 12973]))                  
+                :type "int")
+                nil [12560 31287])
+            ("RepCylBondFilterBond" function
+               (:arguments 
+                  ( ("marked" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [31315 31327])
+                    ("ati1" variable
+                       (:pointer 1
+                        :type ("AtomInfoType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31328 31347])
+                    ("ati2" variable
+                       (:pointer 1
+                        :type ("AtomInfoType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31348 31367])
+                    ("b1" variable (:type "int") (reparse-symbol arg-sub-list) [31368 31375])
+                    ("b2" variable (:type "int") (reparse-symbol arg-sub-list) [31376 31383])
+                    ("na_mode" variable (:type "int") (reparse-symbol arg-sub-list) [31384 31396])
+                    ("c1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [31397 31405])
+                    ("c2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [31406 31414])
+                    ("s1" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [31415 31423])
+                    ("s2" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [31424 31432]))                  
+                :type "void")
+                nil [31289 36687])
+            ("RepCylBondPopulateAdjacentAtoms" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("adjacent_atoms" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [36724 36745])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("ObjectMolecule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36746 36766])
+                    ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36767 36781])
+                    ("marked" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [36782 36794]))                  
+                :type "int")
+                nil [36688 36795])
+            ("RepCylBondPopulateAdjacentAtoms" function
+               (:arguments 
+                  ( ("adjacent_atoms" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [36833 36854])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("ObjectMolecule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36855 36875])
+                    ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36876 36890])
+                    ("marked" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [36891 36903]))                  
+                :type "int")
+                nil [36797 41938])
+            ("RepCylBondNew" function
+               (:pointer 1
+                :arguments 
+                  ( ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41961 41975])
+                    ("state" variable (:type "int") (reparse-symbol arg-sub-list) [41976 41986]))                  
+                :type ("Rep" type (:type "class") nil nil))
+                nil [41942 69034])
+            ("subdivide" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [69058 69064])
+                    ("x" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [69065 69074])
+                    ("y" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [69075 69084]))                  
+                :type "void")
+                nil [69036 69238])
+            ("RepCylinderBox" function
+               (:arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepCylBond" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69259 69273])
+                    ("cgo" variable
+                       (:pointer 1
+                        :type ("CGO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69274 69283])
+                    ("vv1" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [69284 69295])
+                    ("vv2" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [69296 69307])
+                    ("tube_size" variable (:type "float") (reparse-symbol arg-sub-list) [69313 69329])
+                    ("overlap" variable (:type "float") (reparse-symbol arg-sub-list) [69330 69344])
+                    ("nub" variable (:type "float") (reparse-symbol arg-sub-list) [69345 69355]))                  
+                :type "int")
+                nil [69240 72329])
+            ("RepCylinder" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72347 72363])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("RepCylBond" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72364 72378])
+                    ("cgo" variable
+                       (:pointer 1
+                        :type ("CGO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72379 72388])
+                    ("v1arg" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [72389 72402])
+                    ("v2arg" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [72403 72416])
+                    ("nEdge" variable (:type "int") (reparse-symbol arg-sub-list) [72417 72427])
+                    ("frontCapArg" variable (:type "int") (reparse-symbol arg-sub-list) [72430 72446])
+                    ("endCapArg" variable (:type "int") (reparse-symbol arg-sub-list) [72447 72461])
+                    ("tube_size" variable (:type "float") (reparse-symbol arg-sub-list) [72462 72478])
+                    ("overlap" variable (:type "float") (reparse-symbol arg-sub-list) [72479 72493])
+                    ("nub" variable (:type "float") (reparse-symbol arg-sub-list) [72494 72504])
+                    ("dir" variable
+                       (:pointer 2
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [72505 72517])
+                    ("shader_mode" variable (:type "int") (reparse-symbol arg-sub-list) [72520 72536])
+                    ("v2color" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [72537 72553]))                  
+                :type "int")
+                nil [72331 83520])
+            ("RepCylinderImmediate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("v1arg" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [83555 83568])
+                    ("v2arg" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [83569 83582])
+                    ("nEdge" variable (:type "int") (reparse-symbol arg-sub-list) [83583 83593])
+                    ("frontCapArg" variable (:type "int") (reparse-symbol arg-sub-list) [83627 83643])
+                    ("endCapArg" variable (:type "int") (reparse-symbol arg-sub-list) [83644 83658])
+                    ("overlap" variable (:type "float") (reparse-symbol arg-sub-list) [83692 83706])
+                    ("nub" variable (:type "float") (reparse-symbol arg-sub-list) [83707 83717])
+                    ("radius" variable (:type "float") (reparse-symbol arg-sub-list) [83718 83731])
+                    ("dir" variable
+                       (:pointer 2
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [83732 83744]))                  
+                :type "void")
+                nil [83522 87075])
+            ("RepCylBondRenderImmediate" function
+               (:arguments 
+                  ( ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87108 87122])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("RenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87123 87141]))                  
+                :type "void")
+                nil [87077 90701]))          
+      :file "RepCylBond.cpp"
+      :pointmax 90702
+      :fsize 90701
+      :lastmodtime '(21582 41058 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "RepSurface.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("os_python.h" include nil nil [692 713])
+            ("os_predef.h" include nil nil [714 735])
+            ("os_std.h" include nil nil [736 754])
+            ("os_gl.h" include nil nil [755 772])
+            ("Base.h" include nil nil [774 790])
+            ("MemoryDebug.h" include nil nil [791 814])
+            ("OOMac.h" include nil nil [815 832])
+            ("RepSurface.h" include nil nil [833 855])
+            ("Map.h" include nil nil [856 871])
+            ("Scene.h" include nil nil [872 889])
+            ("Sphere.h" include nil nil [890 908])
+            ("Setting.h" include nil nil [909 928])
+            ("Color.h" include nil nil [929 946])
+            ("ObjectMolecule.h" include nil nil [947 973])
+            ("Triangle.h" include nil nil [974 994])
+            ("Vector.h" include nil nil [995 1013])
+            ("Feedback.h" include nil nil [1014 1034])
+            ("main.h" include nil nil [1035 1051])
+            ("Util.h" include nil nil [1052 1068])
+            ("CGO.h" include nil nil [1069 1084])
+            ("P.h" include nil nil [1085 1098])
+            ("PConv.h" include nil nil [1099 1116])
+            ("Selector.h" include nil nil [1117 1137])
+            ("ShaderMgr.h" include nil nil [1138 1159])
+            ("RepSurface" type
+               (:members 
+                  ( ("R" variable (:type ("Rep" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1219 1225])
+                    ("N" variable (:type "int") (reparse-symbol classsubparts) [1228 1234])
+                    ("NT" variable (:type "int") (reparse-symbol classsubparts) [1237 1244])
+                    ("proximity" variable (:type "int") (reparse-symbol classsubparts) [1247 1261])
+                    ("V" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1264 1294])
+                    ("VN" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1264 1294])
+                    ("VC" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1264 1294])
+                    ("VA" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1264 1294])
+                    ("VAO" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1264 1294])
+                    ("RC" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1338 1346])
+                    ("Vis" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1349 1358])
+                    ("T" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1361 1377])
+                    ("S" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1361 1377])
+                    ("AT" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1361 1377])
+                    ("solidFlag" variable (:type "int") (reparse-symbol classsubparts) [1455 1469])
+                    ("oneColorFlag" variable (:type "int") (reparse-symbol classsubparts) [1472 1499])
+                    ("oneColor" variable (:type "int") (reparse-symbol classsubparts) [1472 1499])
+                    ("allVisibleFlag" variable (:type "int") (reparse-symbol classsubparts) [1502 1521])
+                    ("LastVisib" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1524 1540])
+                    ("LastColor" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1543 1558])
+                    ("ColorInvalidated" variable (:type "int") (reparse-symbol classsubparts) [1561 1582])
+                    ("Type" variable (:type "int") (reparse-symbol classsubparts) [1585 1594])
+                    ("max_vdw" variable (:type "float") (reparse-symbol classsubparts) [1597 1611])
+                    ("debug" variable
+                       (:pointer 1
+                        :type ("CGO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1614 1625])
+                    ("shaderCGO" variable
+                       (:pointer 1
+                        :type ("CGO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1801 1829])
+                    ("pickingCGO" variable
+                       (:pointer 1
+                        :type ("CGO" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1801 1829])
+                    ("dot_as_spheres" variable (:type "short") (reparse-symbol classsubparts) [1832 1853])
+                    ("vertexIndices" variable
+                       (:pointer 1
+                        :type ("GL_C_INT_TYPE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1856 1885])
+                    ("sum" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1973 1984])
+                    ("z_value" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [2058 2073])
+                    ("n_tri" variable (:type "int") (reparse-symbol classsubparts) [2134 2144])
+                    ("ix" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [2205 2213])
+                    ("vboRawData" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [2304 2335])
+                    ("vboTmpData" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [2304 2335])
+                    ("vboNumVerts" variable (:type "int") (reparse-symbol classsubparts) [2338 2354])
+                    ("vboVertexVals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [2357 2409])
+                    ("vboNormalVals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [2357 2409])
+                    ("vboColorVals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [2357 2409])
+                    ("vboNormalValsC" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2457 2496])
+                    ("vboColorValsUC" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2457 2496])
+                    ("vboTmpVertexVals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [2499 2560])
+                    ("vboTmpNormalVals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [2499 2560])
+                    ("vboTmpColorVals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [2499 2560])
+                    ("vboTmpNormalValsC" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2615 2660])
+                    ("vboTmpColorValsUC" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2615 2660]))                  
+                :type "struct")
+                nil [1189 2681])
+            ("RepSurface" type
+               (:typedef ("RepSurface" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1189 2681])
+            ("RepSurfaceFree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepSurface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2703 2718]))                  
+                :type "void")
+                nil [2683 2719])
+            ("RepSurfaceSameVis" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepSurface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2742 2757])
+                    ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2758 2772]))                  
+                :type "int")
+                nil [2720 2773])
+            ("RepSurfaceColor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepSurface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2795 2810])
+                    ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2811 2825]))                  
+                :type "void")
+                nil [2774 2826])
+            ("RepSurfaceFree" function
+               (:arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepSurface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2848 2863]))                  
+                :type "void")
+                nil [2828 3724])
+            ("SolventDot" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("nDot" variable (:type "int") (reparse-symbol classsubparts) [3745 3754])
+                          ("dot" variable
+                             (:pointer 1
+                              :type "float")
+                              (reparse-symbol classsubparts) [3757 3768])
+                          ("dotNormal" variable
+                             (:pointer 1
+                              :type "float")
+                              (reparse-symbol classsubparts) [3771 3788])
+                          ("dotCode" variable
+                             (:pointer 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [3791 3804]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3726 3818])
+            ("SurfaceJobAtomInfo" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("vdw" variable (:type "float") (reparse-symbol classsubparts) [3839 3849])
+                          ("flags" variable (:type "int") (reparse-symbol classsubparts) [3852 3862]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3820 3884])
+            ("SolventDotNew" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3919 3936])
+                    ("coord" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3970 3983])
+                    ("atom_info" variable
+                       (:pointer 1
+                        :type ("SurfaceJobAtomInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4017 4048])
+                    ("probe_radius" variable (:type "float") (reparse-symbol arg-sub-list) [4082 4101])
+                    ("sp" variable
+                       (:pointer 1
+                        :type ("SphereRec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4102 4117])
+                    ("present" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4151 4164])
+                    ("circumscribe" variable (:type "int") (reparse-symbol arg-sub-list) [4198 4215])
+                    ("surface_mode" variable (:type "int") (reparse-symbol arg-sub-list) [4216 4233])
+                    ("surface_solvent" variable (:type "int") (reparse-symbol arg-sub-list) [4267 4287])
+                    ("cavity_cull" variable (:type "int") (reparse-symbol arg-sub-list) [4288 4304])
+                    ("all_visible_flag" variable (:type "int") (reparse-symbol arg-sub-list) [4338 4359])
+                    ("max_vdw" variable (:type "float") (reparse-symbol arg-sub-list) [4360 4374])
+                    ("cavity_mode" variable (:type "int") (reparse-symbol arg-sub-list) [4408 4424])
+                    ("cavity_radius" variable (:type "float") (reparse-symbol arg-sub-list) [4425 4445])
+                    ("cavity_cutoff" variable (:type "float") (reparse-symbol arg-sub-list) [4480 4500]))                  
+                :type ("SolventDot" type (:type "class") nil nil))
+                nil [3886 4501])
+            ("SolventDotFree" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("SolventDot" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4530 4545]))                  
+                :type "void")
+                nil [4503 4653])
+            ("check_and_add" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cache" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4868 4879])
+                    ("spacing" variable (:type "int") (reparse-symbol arg-sub-list) [4880 4892])
+                    ("t0" variable (:type "int") (reparse-symbol arg-sub-list) [4893 4900])
+                    ("t1" variable (:type "int") (reparse-symbol arg-sub-list) [4901 4908]))                  
+                :type "int")
+                nil [4843 5322])
+            ("CLAMP_VALUE" variable (:constant-flag t) nil [5332 5343])
+            ("RepSurfaceUpdateVBOBuffers" function
+               (:arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepSurface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5438 5452])
+                    ("ix" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5453 5461]))                  
+                :type "void")
+                nil [5406 7564])
+            ("RepSurfaceSortIX" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7595 7612])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("RepSurface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7613 7627])
+                    ("t_mode" variable (:type "int") (reparse-symbol arg-sub-list) [7628 7639]))                  
+                :type "void")
+                nil [7573 8447])
+            ("AtomInfoIsMasked" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("ObjectMolecule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8470 8490])
+                    ("atm" variable (:type "int") (reparse-symbol arg-sub-list) [8491 8499]))                  
+                :type "int")
+                nil [8449 8653])
+            ("RepSurfaceCGOGenerate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepSurface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8688 8703])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("RenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8704 8722]))                  
+                :type "int")
+                nil [8655 50004])
+            ("RepSurfaceRender" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepSurface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50035 50050])
+                    ("info" variable
+                       (:pointer 1
+                        :type ("RenderInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50051 50069]))                  
+                :type "void")
+                nil [50006 96010])
+            ("RepSurfaceSameVis" function
+               (:arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepSurface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96034 96049])
+                    ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96050 96064]))                  
+                :type "int")
+                nil [96012 96338])
+            ("RepSurfaceInvalidate" function
+               (:arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("Rep" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [96366 96380])
+                    ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [96381 96401])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [96402 96412]))                  
+                :type "void")
+                nil [96340 96522])
+            ("RepSurfaceSameColor" function
+               (:arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepSurface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96548 96563])
+                    ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96564 96578]))                  
+                :type "int")
+                nil [96524 96947])
+            ("RepSurfaceColor" function
+               (:arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("RepSurface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96970 96985])
+                    ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96986 97000]))                  
+                :type "void")
+                nil [96949 118291])
+            ("SurfaceJob" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("coord" variable
+                             (:pointer 1
+                              :type "float")
+                              (reparse-symbol classsubparts) [118326 118339])
+                          ("atomInfo" variable
+                             (:pointer 1
+                              :type ("SurfaceJobAtomInfo" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [118342 118371])
+                          ("maxVdw" variable (:type "float") (reparse-symbol classsubparts) [118375 118388])
+                          ("allVisibleFlag" variable (:type "int") (reparse-symbol classsubparts) [118391 118410])
+                          ("nPresent" variable (:type "int") (reparse-symbol classsubparts) [118414 118427])
+                          ("presentVla" variable
+                             (:pointer 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [118430 118446])
+                          ("solventSphereIndex" variable (:type "int") (reparse-symbol classsubparts) [118450 118486])
+                          ("sphereIndex" variable (:type "int") (reparse-symbol classsubparts) [118450 118486])
+                          ("surfaceType" variable (:type "int") (reparse-symbol classsubparts) [118490 118506])
+                          ("circumscribe" variable (:type "int") (reparse-symbol classsubparts) [118509 118526])
+                          ("probeRadius" variable (:type "float") (reparse-symbol classsubparts) [118529 118547])
+                          ("carveCutoff" variable (:type "float") (reparse-symbol classsubparts) [118550 118568])
+                          ("carveVla" variable
+                             (:pointer 1
+                              :type "float")
+                              (reparse-symbol classsubparts) [118571 118587])
+                          ("surfaceMode" variable (:type "int") (reparse-symbol classsubparts) [118591 118607])
+                          ("surfaceSolvent" variable (:type "int") (reparse-symbol classsubparts) [118610 118629])
+                          ("cavityCull" variable (:type "int") (reparse-symbol classsubparts) [118632 118647])
+                          ("pointSep" variable (:type "float") (reparse-symbol classsubparts) [118650 118665])
+                          ("trimCutoff" variable (:type "float") (reparse-symbol classsubparts) [118668 118685])
+                          ("trimFactor" variable (:type "float") (reparse-symbol classsubparts) [118688 118705])
+                          ("cavityMode" variable (:type "int") (reparse-symbol classsubparts) [118709 118724])
+                          ("cavityRadius" variable (:type "float") (reparse-symbol classsubparts) [118727 118746])
+                          ("cavityCutoff" variable (:type "float") (reparse-symbol classsubparts) [118749 118768])
+                          ("V" variable
+                             (:pointer 1
+                              :type "float")
+                              (reparse-symbol classsubparts) [118788 118802])
+                          ("VN" variable
+                             (:pointer 1
+                              :type "float")
+                              (reparse-symbol classsubparts) [118788 118802])
+                          ("N" variable (:type "int") (reparse-symbol classsubparts) [118805 118823])
+                          ("T" variable
+                             (:pointer 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [118805 118823])
+                          ("S" variable
+                             (:pointer 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [118805 118823])
+                          ("NT" variable (:type "int") (reparse-symbol classsubparts) [118805 118823]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [118293 118838])
+            ("SurfaceJobPurgeResult" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118874 118891])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118892 118907]))                  
+                :type "void")
+                nil [118840 119070])
+            ("SurfaceJobNew" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123720 123737]))                  
+                :type ("SurfaceJob" type (:type "class") nil nil))
+                nil [123687 123780])
+            ("SurfaceJobFree" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123809 123826])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123827 123842]))                  
+                :type "void")
+                nil [123782 123990])
+            ("SurfaceJobEliminateCloseDotsType3orMore" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124036 124053])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124054 124069])
+                    ("repeat_flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [124070 124087])
+                    ("dot_flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [124088 124102]))                  
+                :type "int")
+                nil [123992 125596])
+            ("SurfaceJobEliminateCloseDotsTypeLessThan3" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [125644 125661])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [125662 125677])
+                    ("repeat_flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [125678 125695])
+                    ("dot_flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [125696 125710]))                  
+                :type "int")
+                nil [125598 126526])
+            ("SurfaceJobEliminateFromVArrays" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [126563 126580])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [126581 126596])
+                    ("dot_flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [126597 126611])
+                    ("normalize" variable (:type "short") (reparse-symbol arg-sub-list) [126612 126628]))                  
+                :type "void")
+                nil [126527 127070])
+            ("SurfaceJobEliminateCloseDots" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127105 127122])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127123 127138]))                  
+                :type "int")
+                nil [127072 127717])
+            ("SurfaceJobEliminateTroublesomeVerticesMark" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128000 128017])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128018 128033])
+                    ("repeat_flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [128034 128051])
+                    ("map" variable
+                       (:pointer 1
+                        :type ("MapType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128052 128065])
+                    ("dot_flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [128066 128080])
+                    ("neighborhood" variable (:type "float") (reparse-symbol arg-sub-list) [128081 128100])
+                    ("trim_cutoff" variable (:type "float") (reparse-symbol arg-sub-list) [128101 128119]))                  
+                :type "int")
+                nil [127953 128860])
+            ("SurfaceJobEliminateTroublesomeVertices" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128905 128922])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128923 128938]))                  
+                :type "int")
+                nil [128862 129971])
+            ("SurfaceJobAtomProximityCleanupPass" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130012 130029])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130030 130045])
+                    ("dot_flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [130046 130060])
+                    ("present_vla" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [130061 130078])
+                    ("probe_radius" variable (:type "float") (reparse-symbol arg-sub-list) [130079 130098]))                  
+                :type "int")
+                nil [129973 130939])
+            ("SurfaceJobRefineCopyNewPoints" function
+               (:arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130975 130990])
+                    ("new_dot" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [130991 131006])
+                    ("n_new" variable (:type "int") (reparse-symbol arg-sub-list) [131007 131017]))                  
+                :type "int")
+                nil [130941 131466])
+            ("SurfaceJobRefineAddNewVerticesCheckPoint" function
+               (:arguments 
+                  ( ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [131512 131527])
+                    ("map" variable
+                       (:pointer 1
+                        :type ("MapType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [131528 131541])
+                    ("n_new" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [131542 131553])
+                    ("new_dot" variable
+                       (:pointer 2
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [131554 131570])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [131571 131577])
+                    ("v" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [131578 131587])
+                    ("vn" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [131588 131598])
+                    ("map_cutoff" variable (:type "float") (reparse-symbol arg-sub-list) [131599 131616])
+                    ("neighborhood" variable (:type "float") (reparse-symbol arg-sub-list) [131617 131636])
+                    ("insert_cutoff" variable (:type "float") (reparse-symbol arg-sub-list) [131637 131657]))                  
+                :type "int")
+                nil [131467 132986])
+            ("SurfaceJobRefineAddNewVertices" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133023 133040])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133041 133056]))                  
+                :type "int")
+                nil [132988 134229])
+            ("SurfaceJobCheckInteriorSolventSurface" function
+               (:arguments 
+                  ( ("solv_map" variable
+                       (:pointer 1
+                        :type ("MapType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134274 134292])
+                    ("v" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [134293 134302])
+                    ("sol_dot" variable
+                       (:pointer 1
+                        :type ("SolventDot" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134303 134323])
+                    ("probe_rad_less" variable (:type "float") (reparse-symbol arg-sub-list) [134324 134345])
+                    ("dist2" variable (:type "float") (reparse-symbol arg-sub-list) [134346 134358])
+                    ("a" variable (:type "int") (reparse-symbol arg-sub-list) [134359 134365])
+                    ("flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [134366 134376]))                  
+                :type "void")
+                nil [134231 135424])
+            ("SurfaceJobCheckPresentAndWithin" function
+               (:arguments 
+                  ( ("map" variable
+                       (:pointer 1
+                        :type ("MapType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135463 135476])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135477 135492])
+                    ("present_vla" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [135493 135510])
+                    ("v" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [135511 135520])
+                    ("probe_rad_more" variable (:type "float") (reparse-symbol arg-sub-list) [135521 135542])
+                    ("flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [135543 135553]))                  
+                :type "void")
+                nil [135426 136018])
+            ("SurfaceJobSetProbeRadius" function
+               (:arguments 
+                  ( ("surface_type" variable (:type "int") (reparse-symbol arg-sub-list) [136050 136067])
+                    ("point_sep" variable (:type "float") (reparse-symbol arg-sub-list) [136068 136084])
+                    ("probe_radius" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [136085 136105])
+                    ("probe_rad_more" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [136106 136128])
+                    ("probe_rad_less" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [136129 136151])
+                    ("probe_rad_less2" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [136152 136175]))                  
+                :type "void")
+                nil [136020 136689])
+            ("SurfaceJobRun" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136716 136733])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136734 136749]))                  
+                :type "int")
+                nil [136691 144943])
+            ("RepSurfaceSetSettings" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [144972 144989])
+                    ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [144990 145004])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("ObjectMolecule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [145005 145025])
+                    ("surface_quality" variable (:type "int") (reparse-symbol arg-sub-list) [145026 145046])
+                    ("surface_type" variable (:type "int") (reparse-symbol arg-sub-list) [145047 145064])
+                    ("point_sep" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [145065 145082])
+                    ("sphere_idx" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [145083 145099])
+                    ("solv_sph_idx" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [145100 145118])
+                    ("circumscribe" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [145119 145137]))                  
+                :type "void")
+                nil [144945 147533])
+            ("RepSurfacePrepareSurfaceJob" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147567 147584])
+                    ("surf_job" variable
+                       (:pointer 1
+                        :type ("SurfaceJob" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147585 147606])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("RepSurface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147607 147621])
+                    ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147622 147635])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("ObjectMolecule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147636 147656])
+                    ("atom_info" variable
+                       (:pointer 2
+                        :type ("SurfaceJobAtomInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147657 147688])
+                    ("carve_vla" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [147689 147706])
+                    ("n_present" variable (:type "int") (reparse-symbol arg-sub-list) [147707 147721])
+                    ("present_vla" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [147722 147739])
+                    ("optimize" variable (:type "int") (reparse-symbol arg-sub-list) [147740 147753])
+                    ("sphere_idx" variable (:type "int") (reparse-symbol arg-sub-list) [147754 147769])
+                    ("solv_sph_idx" variable (:type "int") (reparse-symbol arg-sub-list) [147770 147787])
+                    ("surface_type" variable (:type "int") (reparse-symbol arg-sub-list) [147788 147805])
+                    ("circumscribe" variable (:type "int") (reparse-symbol arg-sub-list) [147806 147823])
+                    ("probe_radius" variable (:type "float") (reparse-symbol arg-sub-list) [147824 147843])
+                    ("point_sep" variable (:type "float") (reparse-symbol arg-sub-list) [147844 147860])
+                    ("carve_cutoff" variable (:type "float") (reparse-symbol arg-sub-list) [147861 147880]))                  
+                :type "int")
+                nil [147535 150369])
+            ("RepSurfaceFindAllPresentAtoms" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("ObjectMolecule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [151180 151200])
+                    ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [151201 151214])
+                    ("present_vla" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [151215 151232])
+                    ("inclH" variable (:type "int") (reparse-symbol arg-sub-list) [151233 151243])
+                    ("cullByFlag" variable (:type "int") (reparse-symbol arg-sub-list) [151244 151259]))                  
+                :type "void")
+                nil [151145 151755])
+            ("RepSurfaceAddNearByAtomsIfNotSurfaced" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [151799 151815])
+                    ("map" variable
+                       (:pointer 1
+                        :type ("MapType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [151816 151829])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("ObjectMolecule" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [151830 151850])
+                    ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [151851 151864])
+                    ("present_vla" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [151865 151882])
+                    ("inclH" variable (:type "int") (reparse-symbol arg-sub-list) [151883 151893])
+                    ("cullByFlag" variable (:type "int") (reparse-symbol arg-sub-list) [151894 151909])
+                    ("probe_radius" variable (:type "float") (reparse-symbol arg-sub-list) [151910 151929])
+                    ("optimize" variable (:type "int") (reparse-symbol arg-sub-list) [151930 151943]))                  
+                :type "int")
+                nil [151757 152755])
+            ("RepSurfaceRemoveAtomsNotWithinCutoff" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [152798 152814])
+                    ("carve_map" variable
+                       (:pointer 1
+                        :type ("MapType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [152815 152834])
+                    ("carve_vla" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [152835 152852])
+                    ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [152853 152866])
+                    ("present_vla" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [152867 152884])
+                    ("carve_cutoff" variable (:type "float") (reparse-symbol arg-sub-list) [152885 152904]))                  
+                :type "int")
+                nil [152757 153428])
+            ("RepSurfaceNew" function
+               (:pointer 1
+                :arguments 
+                  ( ("cs" variable
+                       (:pointer 1
+                        :type ("CoordSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [153449 153463])
+                    ("state" variable (:type "int") (reparse-symbol arg-sub-list) [153464 153474]))                  
+                :type ("Rep" type (:type "class") nil nil))
+                nil [153430 162769])
+            ("SolventDotFilterOutSameXYZ" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [162803 162820])
+                    ("map" variable
+                       (:pointer 1
+                        :type ("MapType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [162821 162834])
+                    ("atom_info" variable
+                       (:pointer 1
+                        :type ("SurfaceJobAtomInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [162835 162866])
+                    ("a_atom_info" variable
+                       (:pointer 1
+                        :type ("SurfaceJobAtomInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [162867 162899])
+                    ("coord" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [162900 162913])
+                    ("a" variable (:type "int") (reparse-symbol arg-sub-list) [162914 162920])
+                    ("present" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [162921 162934])
+                    ("skip_flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [162935 162950]))                  
+                :type "int")
+                nil [162772 163655])
+            ("SolventDotGetDotsAroundVertexInSphere" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163699 163716])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SolventDot" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163717 163731])
+                    ("map" variable
+                       (:pointer 1
+                        :type ("MapType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163732 163745])
+                    ("atom_info" variable
+                       (:pointer 1
+                        :type ("SurfaceJobAtomInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163746 163777])
+                    ("a_atom_info" variable
+                       (:pointer 1
+                        :type ("SurfaceJobAtomInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163778 163810])
+                    ("coord" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [163811 163824])
+                    ("a" variable (:type "int") (reparse-symbol arg-sub-list) [163825 163831])
+                    ("present" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [163832 163845])
+                    ("sp" variable
+                       (:pointer 1
+                        :type ("SphereRec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163846 163861])
+                    ("radius" variable (:type "float") (reparse-symbol arg-sub-list) [163862 163875])
+                    ("dotCnt" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [163876 163888])
+                    ("stopDot" variable (:type "int") (reparse-symbol arg-sub-list) [163889 163901])
+                    ("dotPtr" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [163902 163916])
+                    ("dotNormal" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [163917 163934])
+                    ("nDot" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [163935 163945]))                  
+                :type "int")
+                nil [163657 165286])
+            ("SolventDotCircumscribeAroundVertex" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [165327 165344])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SolventDot" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [165345 165359])
+                    ("map" variable
+                       (:pointer 1
+                        :type ("MapType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [165360 165373])
+                    ("vdw" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [165374 165385])
+                    ("dist" variable (:type "float") (reparse-symbol arg-sub-list) [165386 165397])
+                    ("v0" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [165398 165408])
+                    ("v2" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [165409 165419])
+                    ("circumscribe" variable (:type "int") (reparse-symbol arg-sub-list) [165420 165437])
+                    ("atom_info" variable
+                       (:pointer 1
+                        :type ("SurfaceJobAtomInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [165438 165469])
+                    ("a_atom_info" variable
+                       (:pointer 1
+                        :type ("SurfaceJobAtomInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [165470 165502])
+                    ("jj_atom_info" variable
+                       (:pointer 1
+                        :type ("SurfaceJobAtomInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [165503 165536])
+                    ("present" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [165537 165550])
+                    ("a" variable (:type "int") (reparse-symbol arg-sub-list) [165551 165557])
+                    ("jj" variable (:type "int") (reparse-symbol arg-sub-list) [165558 165565])
+                    ("coord" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [165566 165579])
+                    ("probe_radius" variable (:type "float") (reparse-symbol arg-sub-list) [165580 165599])
+                    ("dotCnt" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [165600 165612])
+                    ("stopDot" variable (:type "int") (reparse-symbol arg-sub-list) [165613 165625]))                  
+                :type "int")
+                nil [165288 167980])
+            ("SolventDotMarkDotsWithinCutoff" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [168017 168034])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SolventDot" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [168035 168049])
+                    ("map" variable
+                       (:pointer 1
+                        :type ("MapType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [168050 168063])
+                    ("I_dot" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [168064 168077])
+                    ("nDot" variable (:type "int") (reparse-symbol arg-sub-list) [168078 168087])
+                    ("cavityDot" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [168088 168105])
+                    ("dot_flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [168106 168120])
+                    ("cutoff" variable (:type "float") (reparse-symbol arg-sub-list) [168121 168134]))                  
+                :type "int")
+                nil [167982 168570])
+            ("SolventDotSlideDotsAndInfo" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [168605 168622])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SolventDot" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [168623 168637])
+                    ("dot_flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [168638 168652])
+                    ("flag_value" variable (:type "int") (reparse-symbol arg-sub-list) [168653 168668]))                  
+                :type "void")
+                nil [168573 169250])
+            ("SolventDotMarkDotsWithinProbeRadius" function
+               (:arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [169292 169309])
+                    ("I" variable
+                       (:pointer 1
+                        :type ("SolventDot" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [169310 169324])
+                    ("map" variable
+                       (:pointer 1
+                        :type ("MapType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [169325 169338])
+                    ("cavity_cull" variable (:type "int") (reparse-symbol arg-sub-list) [169339 169355])
+                    ("probe_radius_plus" variable (:type "float") (reparse-symbol arg-sub-list) [169356 169380])
+                    ("dot_flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [169381 169395])
+                    ("flag" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [169396 169406]))                  
+                :type "int")
+                nil [169252 170071])
+            ("SolventDotNew" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("G" variable
+                       (:pointer 1
+                        :type ("PyMOLGlobals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [170106 170123])
+                    ("coord" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [170157 170170])
+                    ("atom_info" variable
+                       (:pointer 1
+                        :type ("SurfaceJobAtomInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [170204 170235])
+                    ("probe_radius" variable (:type "float") (reparse-symbol arg-sub-list) [170269 170288])
+                    ("sp" variable
+                       (:pointer 1
+                        :type ("SphereRec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [170289 170304])
+                    ("present" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [170338 170351])
+                    ("circumscribe" variable (:type "int") (reparse-symbol arg-sub-list) [170385 170402])
+                    ("surface_mode" variable (:type "int") (reparse-symbol arg-sub-list) [170403 170420])
+                    ("surface_solvent" variable (:type "int") (reparse-symbol arg-sub-list) [170454 170474])
+                    ("cavity_cull" variable (:type "int") (reparse-symbol arg-sub-list) [170475 170491])
+                    ("all_visible_flag" variable (:type "int") (reparse-symbol arg-sub-list) [170525 170546])
+                    ("max_vdw" variable (:type "float") (reparse-symbol arg-sub-list) [170547 170561])
+                    ("cavity_mode" variable (:type "int") (reparse-symbol arg-sub-list) [170595 170611])
+                    ("cavity_radius" variable (:type "float") (reparse-symbol arg-sub-list) [170612 170632])
+                    ("cavity_cutoff" variable (:type "float") (reparse-symbol arg-sub-list) [170667 170687]))                  
+                :type ("SolventDot" type (:type "class") nil nil))
+                nil [170073 176960]))          
+      :file "RepSurface.cpp"
+      :pointmax 176961
+      :fsize 176960
+      :lastmodtime '(21577 8243 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CLAMP_VALUE" (spp-arg-list ("v") 5343 . 5346) . ((semantic-list "((v>1.f) ? 1.f :  (v < 0.f) ? 0.f : v)" 5348 . 5386)))
+          )
+)
+    (semanticdb-table "ObjectMolecule.h"
+      :file "ObjectMolecule.h"
+      :fsize 22934
+      :lastmodtime '(21577 8243 0 0))
+    (semanticdb-table "RepCylBond.h"
+      :file "RepCylBond.h"
+      :fsize 896
+      :lastmodtime '(21345 11814 0 0))
+    (semanticdb-table "ObjectGadgetRamp.h"
+      :file "ObjectGadgetRamp.h"
+      :fsize 2967
+      :lastmodtime '(21568 11570 0 0))
+    (semanticdb-table "ObjectGadget.h"
+      :file "ObjectGadget.h"
+      :fsize 2313
+      :lastmodtime '(21568 11570 0 0))
+    (semanticdb-table "ObjectSlice.h"
+      :file "ObjectSlice.h"
+      :fsize 2477
+      :lastmodtime '(21577 8243 0 0))
+    (semanticdb-table "RepSurface.h"
+      :file "RepSurface.h"
+      :fsize 1016
+      :lastmodtime '(21345 11814 0 0)))
+  :file "!Users!marques!Development!pymol!layer2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

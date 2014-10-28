@@ -10,48 +10,48 @@
 (global-ede-mode 1)
 
 ;; EDE Project
-(ede-cpp-root-project "PyMOL"
-                :name "PyMol Project"
-                :file "~/Development/pymol/Makefile"
-                :include-path '("/"
-                                "/layer0"
-                                "/layer1"
-                                "/layer2"
-				"/layer3"
-				"/layer4"
-				"/layer5"
-				"/contrib/PicklingTools/include"
-                               )
-                :system-include-path '("/usr/local/include")
-                :spp-table '(("SYM_TO_MAT_LIST_IN_C" . "")
-			     ("PICKLETOOLS" . "")
-			     ("_PYMOL_OSX" . "")
-			     ("_PYMOL_NO_MAIN" . "")
-			     ("_PYMOL_NOPY" . "")
-			     ("_PYMOL_LIB" . "")
-			     ("_PYMOL_MODULE" . "")
-			     ("_PYMOL_INLINE" . "")
-			     ("DARWIN_NO_CARBON" . "")
-			     ("NO_MMLIBS" . "")
-			     ("CMOL_HAS_OPENGL_PYMOL" . "")
-			     ("_PYMOL_FREETYPE" . "")
-			     ("_PYMOL_IOS" . "")
-			     ("FT_OPTIMIZE_MEMORY" . "")
-			     ("DFT2_BUILD_LIBRARY" . "")
-			     ("_PYMOL_CGO_DRAWBUFFERS" . "")
-			     ("TT_CONFIG_OPTION_BYTECODE_INTERPRETER" . "")
-			     ("PYMOL_TEXT_IN_ONE_TEXTURE" . "")
-			     ("PYMOL_IOS_NO_4_PASS" . "")
-			     ("RENDER_ORTHO_WITH_CGO" . "")
-			     ("PURE_OPENGL_ES_2" . "")
-			     ("OPENGL_ES_2 -D_WEBGL" . "")
-			     ("CMOL_HAS_OPENGL" . "")
-			     ("CMOL_HAS_PYMOL" . "")
-			     ("GL_GLEXT_PROTOTYPES" . "")
-			     ("_WEBGL_INCLUDE_DEFAULT_FONT" . "")
-			     ("OC_NEW_STYLE_INCLUDES" . "")
-			     ("OC_FACTOR_INTO_H_AND_CC" . "")
-			     ("_PICKLETOOLS_SAVE" . "")))
+;; (ede-cpp-root-project "PyMOL"
+;;                 :name "PyMol Project"
+;;                 :file "~/Development/pymol/Makefile"
+;;                 :include-path '("/"
+;;                                 "/layer0"
+;;                                 "/layer1"
+;;                                 "/layer2"
+;; 				"/layer3"
+;; 				"/layer4"
+;; 				"/layer5"
+;; 				"/contrib/PicklingTools/include"
+;;                                )
+;;                 :system-include-path '("/usr/local/include")
+;;                 :spp-table '(("SYM_TO_MAT_LIST_IN_C" . "")
+;; 			     ("PICKLETOOLS" . "")
+;; 			     ("_PYMOL_OSX" . "")
+;; 			     ("_PYMOL_NO_MAIN" . "")
+;; 			     ("_PYMOL_NOPY" . "")
+;; 			     ("_PYMOL_LIB" . "")
+;; 			     ("_PYMOL_MODULE" . "")
+;; 			     ("_PYMOL_INLINE" . "")
+;; 			     ("DARWIN_NO_CARBON" . "")
+;; 			     ("NO_MMLIBS" . "")
+;; 			     ("CMOL_HAS_OPENGL_PYMOL" . "")
+;; 			     ("_PYMOL_FREETYPE" . "")
+;; 			     ("_PYMOL_IOS" . "")
+;; 			     ("FT_OPTIMIZE_MEMORY" . "")
+;; 			     ("DFT2_BUILD_LIBRARY" . "")
+;; 			     ("_PYMOL_CGO_DRAWBUFFERS" . "")
+;; 			     ("TT_CONFIG_OPTION_BYTECODE_INTERPRETER" . "")
+;; 			     ("PYMOL_TEXT_IN_ONE_TEXTURE" . "")
+;; 			     ("PYMOL_IOS_NO_4_PASS" . "")
+;; 			     ("RENDER_ORTHO_WITH_CGO" . "")
+;; 			     ("PURE_OPENGL_ES_2" . "")
+;; 			     ("OPENGL_ES_2 -D_WEBGL" . "")
+;; 			     ("CMOL_HAS_OPENGL" . "")
+;; 			     ("CMOL_HAS_PYMOL" . "")
+;; 			     ("GL_GLEXT_PROTOTYPES" . "")
+;; 			     ("_WEBGL_INCLUDE_DEFAULT_FONT" . "")
+;; 			     ("OC_NEW_STYLE_INCLUDES" . "")
+;; 			     ("OC_FACTOR_INTO_H_AND_CC" . "")
+;; 			     ("_PICKLETOOLS_SAVE" . "")))
 
 
 ;; Semantic Features
@@ -163,8 +163,10 @@
 ;; Get rid of the aquamacs toolbar
 (tool-bar-mode 0)
 
-;; Ditch them scrollbars
-(scroll-bar-mode -1)
+;; Ditch them scrollbars, maybe
+(condition-case ()
+    (scroll-bar-mode -1)
+  (error nil))
 
 ;; Highlight current line
 (global-hl-line-mode 1)
@@ -313,5 +315,16 @@
 ;;       (require 'tern-auto-complete)
 ;;       (tern-ac-setup)))
 
+;; Autocomplete
+(add-to-list 'load-path "~/.emacs.d/vendor/auto-complete")
+(add-to-list 'load-path "~/.emacs.d/vendor/auto-complete/dict")
+(require 'auto-complete-config)
+(ac-config-default)
 
+;; Add semantic hooks
+(defun c-mode-cedet-ac-hook ()
+  (add-to-list 'ac-sources 'ac-source-gtags)
+  (add-to-list 'ac-sources 'ac-source-semantic))
+(add-hook 'c-mode-common-hook 'c-mode-cedet-ac-hook)
+(add-hook 'c++-mode-common-hook 'c-mode-cedet-ac-hook)
 
