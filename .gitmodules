@@ -28,3 +28,18 @@
 [submodule "vendor/tern"]
 	path = vendor/tern
 	url = https://github.com/marijnh/tern.git
+[submodule "vendor/emacs-jedi"]
+	path = vendor/emacs-jedi
+	url = https://github.com/tkf/emacs-jedi.git
+[submodule "vendor/emacs-epc"]
+	path = vendor/emacs-epc
+	url = https://github.com/kiwanami/emacs-epc.git
+[submodule "vendor/emacs-deferred"]
+	path = vendor/emacs-deferred
+	url = https://github.com/kiwanami/emacs-deferred.git
+[submodule "vendor/emacs-ctable"]
+	path = vendor/emacs-ctable
+	url = https://github.com/kiwanami/emacs-ctable.git
+[submodule "vendor/emacs-python-environment"]
+	path = vendor/emacs-python-environment
+	url = https://github.com/tkf/emacs-python-environment.git

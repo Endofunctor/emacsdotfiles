@@ -337,3 +337,14 @@
       (tern-ac-setup)))
 (add-hook 'js-mode-hook (lambda () (tern-mode t)))
 (add-hook 'javascript-mode-hook (lambda () (tern-mode t)))
+
+;; Emacs Jedi - Python Autocomplete
+(add-to-list 'load-path "~/.emacs.d/vendor/emacs-python-environment")
+(add-to-list 'load-path "~/.emacs.d/vendor/emacs-deferred")
+(add-to-list 'load-path "~/.emacs.d/vendor/emacs-ctable")
+(require 'ctable)
+(add-to-list 'load-path "~/.emacs.d/vendor/emacs-epc")
+(add-to-list 'load-path "~/.emacs.d/vendor/emacs-jedi")
+(setq jedi:server-command '("~/.emacs.d/vendor/emacs-jedi/jediepcserver.py"))
+(add-hook 'python-mode-hook 'jedi:setup)
+(autoload 'jedi:setup "jedi" nil t)
