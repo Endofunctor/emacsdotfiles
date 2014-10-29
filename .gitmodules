@@ -43,3 +43,6 @@
 [submodule "vendor/emacs-python-environment"]
 	path = vendor/emacs-python-environment
 	url = https://github.com/tkf/emacs-python-environment.git
+[submodule "vendor/angularjs-mode"]
+	path = vendor/angularjs-mode
+	url = https://github.com/omouse/angularjs-mode.git

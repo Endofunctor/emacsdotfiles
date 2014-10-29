@@ -92,9 +92,10 @@
 ;;   (global-set-key (kbd "M-RET") 'toggle-frame-fullscreen))
 
 (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
-(add-to-list 'default-frame-alist '(font . "Menlo for Powerline"))
-(set-face-attribute 'default t :font "Menlo for Powerline")
-
+;; (add-to-list 'default-frame-alist '(font . "Menlo for Powerline"))
+;; (set-face-attribute 'default t :font "Menlo for Powerline")
+(add-to-list 'default-frame-alist '(font . "Bitstream Vera Sans Mono"))
+(set-face-attribute 'default t :font "Bitstream Vera Sans Mono")
 
 ;; Undo Tree Mode
 ;; Tell emacs where is your personal elisp lib dir
