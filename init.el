@@ -96,6 +96,8 @@
 ;; (set-face-attribute 'default t :font "Menlo for Powerline")
 (add-to-list 'default-frame-alist '(font . "Bitstream Vera Sans Mono"))
 (set-face-attribute 'default t :font "Bitstream Vera Sans Mono")
+(global-linum-mode 0)
+(set-face-attribute 'default nil :height 140)
 
 ;; Undo Tree Mode
 ;; Tell emacs where is your personal elisp lib dir

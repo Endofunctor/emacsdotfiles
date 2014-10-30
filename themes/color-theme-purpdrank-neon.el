@@ -24,7 +24,7 @@
      (blank-space-face ((t (:background "LightGray"))))
      (blank-tab-face ((t (:background "cornsilk" :foreground "black"))))
      (default ((t (:background "#272822" :inherit wnka-foreground-face ))))
-     (fringe ((t (:background "gray10"))))
+     (fringe ((t (:background "Grey15"))))
      (bold ((t (:bold t :foreground "white"))))
      (bold-italic ((t (:italic t :bold t))))
      (calendar-today-face ((t (:underline t))))
