@@ -81,10 +81,10 @@
 
 ;; ;; use left command as meta, keep right command for mac binds
 ;; ;; set M-h to hide to keep osx behavior
-;; (when system-type 'darwin
-;;   (setf mac-right-command-modifier 'meta)
-;;   (setq ns-command-modifier 'meta)
-;;   (setq ns-right-command-modifier 'super)
+(when system-type 'darwin
+   (setf mac-right-command-modifier 'meta)
+   (setq ns-command-modifier 'meta)
+   (setq ns-right-command-modifier 'super))
 ;;   (global-set-key (kbd "M-h") 'ns-do-hide-emacs)
 ;;   (global-set-key (kbd "M-`") 'ns-next-frame)
 ;;   (global-set-key (kbd "M-c") 'ns-copy-including-secondary)
@@ -97,7 +97,7 @@
 (add-to-list 'default-frame-alist '(font . "Bitstream Vera Sans Mono"))
 (set-face-attribute 'default t :font "Bitstream Vera Sans Mono")
 (global-linum-mode 0)
-(set-face-attribute 'default nil :height 140)
+(set-face-attribute 'default nil :height 120)
 
 ;; Undo Tree Mode
 ;; Tell emacs where is your personal elisp lib dir
@@ -351,3 +351,13 @@
 (setq jedi:server-command '("~/.emacs.d/vendor/emacs-jedi/jediepcserver.py"))
 (add-hook 'python-mode-hook 'jedi:setup)
 (autoload 'jedi:setup "jedi" nil t)
+
+;; Haskell Mode
+(add-to-list 'load-path "~/.emacs.d/vendor/haskell-mode")
+(require 'haskell-mode-autoloads)
+(add-to-list 'Info-default-directory-list "~/.emacs.d/vendor/haskell-mode")
+
+;; Generic Scripts
+(add-to-list 'load-path "~/.emacs.d/vendor/generic-scripts")
+(require 'buffer-move)
+

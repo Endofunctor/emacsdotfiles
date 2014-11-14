@@ -46,3 +46,6 @@
 [submodule "vendor/angularjs-mode"]
 	path = vendor/angularjs-mode
 	url = https://github.com/omouse/angularjs-mode.git
+[submodule "vendor/haskell-mode"]
+	path = vendor/haskell-mode
+	url = https://github.com/haskell/haskell-mode.git

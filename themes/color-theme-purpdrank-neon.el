@@ -6,7 +6,7 @@
   (interactive)
   (color-theme-install
    '(color-theme-purpdrank-neon
-     ((background-color . "Grey15")
+     ((background-color . "Grey15");;. "#2E2E2E");; "Grey15")
       (background-mode . dark)
       (border-color . "white")
       (cursor-color . "green")
@@ -23,7 +23,7 @@
 
      (blank-space-face ((t (:background "LightGray"))))
      (blank-tab-face ((t (:background "cornsilk" :foreground "black"))))
-     (default ((t (:background "#272822" :inherit wnka-foreground-face ))))
+     (default ((t (:background "Grey15" :inherit wnka-foreground-face ))));;"#272822" :inherit wnka-foreground-face ))))
      (fringe ((t (:background "Grey15"))))
      (bold ((t (:bold t :foreground "white"))))
      (bold-italic ((t (:italic t :bold t))))
