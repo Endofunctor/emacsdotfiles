@@ -118,7 +118,8 @@
 (load-file "~/.emacs.d/vendor/ppindent/ppindent.el")
 (require 'ppindent)
 
-(add-to-list 'load-path "/Users/marques/Development/rust/src/etc/emacs/")
+(add-to-list 'load-path "~/.emacs.d/modes")
+(require 'rainbow-mode)
 (autoload 'rust-mode "rust-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
 
@@ -130,6 +131,21 @@
 (color-theme-purpdrank-neon)
 
 (load-file "~/.emacs.d/modes/glsl-mode.el")
+
+
+;; Fix some C++11 indenting
+(defadvice c-lineup-arglist (around my activate)
+  "Improve indentation of continued C++11 lambda function opened as argument."
+  (setq ad-return-value
+        (if (and (equal major-mode 'c++-mode)
+                 (ignore-errors
+                   (save-excursion
+                     (goto-char (c-langelem-pos langelem))
+                     ;; Detect "[...](" or "[...]{". preceded by "," or "(",
+                     ;;   and with unclosed brace.
+                     (looking-at ".*[(,][ \t]*\\[[^]]*\\][ \t]*[({][^}]*$"))))
+            0                           ; no additional indent
+          ad-do-it)))                   ; default behavior
 
 ;;(load-file "~/.emacs.d/vendor/cedet-1.1/common/cedet.el")
 ;;(global-ede-mode 1)
