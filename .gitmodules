@@ -49,3 +49,6 @@
 [submodule "vendor/haskell-mode"]
 	path = vendor/haskell-mode
 	url = https://github.com/haskell/haskell-mode.git
+[submodule "vendor/web-mode"]
+	path = vendor/web-mode
+	url = https://github.com/fxbois/web-mode.git
