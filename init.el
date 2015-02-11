@@ -388,3 +388,9 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/generic-scripts")
 (require 'buffer-move)
 
+(defun figlet-region (&optional b e) 
+  (interactive "r")
+  (shell-command-on-region b e "figlet" (current-buffer) t)
+  (comment-region (mark) (point)))
+
+(global-set-key "\C-c\C-f" 'figlet-region)
