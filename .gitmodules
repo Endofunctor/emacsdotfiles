@@ -52,3 +52,6 @@
 [submodule "vendor/web-mode"]
 	path = vendor/web-mode
 	url = https://github.com/fxbois/web-mode.git
+[submodule "vendor/nim-mode"]
+	path = vendor/nim-mode
+	url = https://github.com/reactormonk/nim-mode.git
