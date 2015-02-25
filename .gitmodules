@@ -55,3 +55,18 @@
 [submodule "vendor/nim-mode"]
 	path = vendor/nim-mode
 	url = https://github.com/reactormonk/nim-mode.git
+[submodule "vendor/gist.el"]
+	path = vendor/gist.el
+	url = https://github.com/defunkt/gist.el.git
+[submodule "vendor/tabulated-list.el"]
+	path = vendor/tabulated-list.el
+	url = https://github.com/sigma/tabulated-list.el.git
+[submodule "vendor/gh.el"]
+	path = vendor/gh.el
+	url = https://github.com/sigma/gh.el.git
+[submodule "vendor/pcache"]
+	path = vendor/pcache
+	url = https://github.com/sigma/pcache.git
+[submodule "vendor/logito"]
+	path = vendor/logito
+	url = https://github.com/sigma/logito.git
